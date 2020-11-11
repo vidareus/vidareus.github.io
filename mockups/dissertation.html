@@ -1,0 +1,1873 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Evaluations</title>
+<meta charset="utf-8">
+<meta name="description" content="Duke T3">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Duke T3">
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-192x192.png">
+<link rel="apple-touch-icon" sizes="167x167" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-192x192.png">
+<link rel="manifest" href="https://obge.lollel.com/manifest.json">
+<link href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.03.08.21/images/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@master/css/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.09.11.15/js/script.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css" integrity="sha256-bDcYpq5PLrWdVEWBIoJVgzkhWK2GZPhYBmECca0x85I=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.min.js" integrity="sha256-XM3WFGub3gsB764gNg+3Qosv9Cq6NE2O/mQ7AxwNt6o=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+<style type="text/css">
+        body {
+            font-size: 1.1em;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .table th, .table td, .table thead th {
+            vertical-align: middle;
+        }
+        .tools {
+            font-size: 1.25rem;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+<div id="loading" class="loading">
+<h1>
+<div class="icon baseline">
+<svg aria-hidden="true" class="icon-spin">
+<use xlink:href="icons.svg#spinner-third"></use>
+</svg>
+</div>
+</h1>
+</div>
+<main class="inner-body">
+<div class="layout layout-nav-side">
+<div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top spf-link">
+<a class="navbar-brand" href="/dashboard">
+<img alt="Duke T3" src="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.09.26.16/images/logos/logo.svg" width="50" />&nbsp;<strong>&nbsp;&nbsp;T3<sup><sup><i>beta</i></sup></sup></strong>
+</a>
+<div class="d-flex align-items-center">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<span style="font-size:1.25rem">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#bars"></use>
+</svg>
+</div>
+</span>
+</button>
+<div class="d-block d-lg-none ml-2">
+<div class="dropdown">
+<a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img alt="Image" src="https://coubisou.vidare.us/thumbnail/12345678" class="avatar" />
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="/people/my" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#user"></use>
+</svg>
+</div>
+Profile
+</a>
+<a href="/accounts/logout" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#sign-out-alt"></use>
+</svg>
+</div>
+Logout
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse navbar-collapse flex-column" id="navbar-collapse">
+<ul class="navbar-nav d-lg-block">
+<li class="nav-item">
+<a class="nav-link" href="/dashboard">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#chalkboard"></use>
+</svg>
+</div>
+Dashboard
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/students">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#users-class"></use>
+</svg>
+</div>
+My Students
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/frs/edit">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#telescope"></use>
+</svg>
+</div>
+Research Training Profile
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/resources">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#radar"></use>
+</svg>
+</div>
+Resource Library
+</a>
+</li>
+</ul>
+</div>
+<div class="d-none d-lg-block">
+<div class="dropup">
+<a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img alt="avatar" src="https://coubisou.vidare.us/thumbnail/12345678" class="avatar" /> <span style="color:whitesmoke;font-weight:bold">Faculty</span>
+</a>
+<div class="dropdown-menu">
+<a href="/people/my" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#user"></use>
+</svg>
+</div>
+Profile
+</a>
+<a href="/accounts/logout" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#sign-out-alt"></use>
+</svg>
+</div>
+Logout
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="main-container" class="main-container">
+<div id="content" class="container">
+<form id="form" method="POST" class="checklist" action="0">
+<input type="hidden" name="taskID" value="0">
+<div class="row justify-content-center">
+<div id="evaluation" class="col-lg-12 col-xl-12">
+<div class="page-header">
+<h1>Dissertation Defense Evaluation Form</h1>
+<p class="lead">for Student</p>
+<div id="evaluation-form-notice" class="alert alert-primary" role="alert">
+Comment box will appear once all evaluation questions are answered. Please sign clearly on the digital signpad when you submit.
+</div>
+<div class="d-flex align-items-center">
+<ul class="avatars">
+</ul>
+</div>
+</div>
+<ul class="nav nav-tabs nav-fill" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Abstract</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Background</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Methods</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Results</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">Discussion</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">Oral Exam</a>
+</li>
+</ul>
+<div>&nbsp;</div>
+<div class="tab-content">
+<div class="tab-pane fade active show" id="tab1" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Abstract
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">N/A</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="81b07fd3-b23c-476f-9858-189be1530cad">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Briefly describes the research problem and objectives/aims</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[81b07fd3-b23c-476f-9858-189be1530cad]" id="81b07fd3-b23c-476f-9858-189be1530cad_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="81b07fd3-b23c-476f-9858-189be1530cad_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#81b07fd3-b23c-476f-9858-189be1530cad_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[81b07fd3-b23c-476f-9858-189be1530cad]" id="81b07fd3-b23c-476f-9858-189be1530cad_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="81b07fd3-b23c-476f-9858-189be1530cad_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#81b07fd3-b23c-476f-9858-189be1530cad_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[81b07fd3-b23c-476f-9858-189be1530cad]" id="81b07fd3-b23c-476f-9858-189be1530cad_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="81b07fd3-b23c-476f-9858-189be1530cad_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#81b07fd3-b23c-476f-9858-189be1530cad_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[81b07fd3-b23c-476f-9858-189be1530cad]" id="81b07fd3-b23c-476f-9858-189be1530cad_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="81b07fd3-b23c-476f-9858-189be1530cad_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#81b07fd3-b23c-476f-9858-189be1530cad_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[81b07fd3-b23c-476f-9858-189be1530cad]" id="81b07fd3-b23c-476f-9858-189be1530cad_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="81b07fd3-b23c-476f-9858-189be1530cad_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#81b07fd3-b23c-476f-9858-189be1530cad_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="18976c04-0c60-46eb-b622-5b91de27b4d5">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Effectively communicates significance and impact of the proposed research</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[18976c04-0c60-46eb-b622-5b91de27b4d5]" id="18976c04-0c60-46eb-b622-5b91de27b4d5_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="18976c04-0c60-46eb-b622-5b91de27b4d5_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#18976c04-0c60-46eb-b622-5b91de27b4d5_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[18976c04-0c60-46eb-b622-5b91de27b4d5]" id="18976c04-0c60-46eb-b622-5b91de27b4d5_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="18976c04-0c60-46eb-b622-5b91de27b4d5_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#18976c04-0c60-46eb-b622-5b91de27b4d5_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[18976c04-0c60-46eb-b622-5b91de27b4d5]" id="18976c04-0c60-46eb-b622-5b91de27b4d5_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="18976c04-0c60-46eb-b622-5b91de27b4d5_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#18976c04-0c60-46eb-b622-5b91de27b4d5_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[18976c04-0c60-46eb-b622-5b91de27b4d5]" id="18976c04-0c60-46eb-b622-5b91de27b4d5_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="18976c04-0c60-46eb-b622-5b91de27b4d5_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#18976c04-0c60-46eb-b622-5b91de27b4d5_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[18976c04-0c60-46eb-b622-5b91de27b4d5]" id="18976c04-0c60-46eb-b622-5b91de27b4d5_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="18976c04-0c60-46eb-b622-5b91de27b4d5_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#18976c04-0c60-46eb-b622-5b91de27b4d5_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab2" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Background
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">N/A</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="e05ba107-2d87-4598-9170-b0d4001eeee0">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Describes the purpose/aims of the study in a logical explicit manner</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e05ba107-2d87-4598-9170-b0d4001eeee0]" id="e05ba107-2d87-4598-9170-b0d4001eeee0_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="e05ba107-2d87-4598-9170-b0d4001eeee0_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#e05ba107-2d87-4598-9170-b0d4001eeee0_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e05ba107-2d87-4598-9170-b0d4001eeee0]" id="e05ba107-2d87-4598-9170-b0d4001eeee0_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="e05ba107-2d87-4598-9170-b0d4001eeee0_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#e05ba107-2d87-4598-9170-b0d4001eeee0_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e05ba107-2d87-4598-9170-b0d4001eeee0]" id="e05ba107-2d87-4598-9170-b0d4001eeee0_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="e05ba107-2d87-4598-9170-b0d4001eeee0_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#e05ba107-2d87-4598-9170-b0d4001eeee0_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e05ba107-2d87-4598-9170-b0d4001eeee0]" id="e05ba107-2d87-4598-9170-b0d4001eeee0_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="e05ba107-2d87-4598-9170-b0d4001eeee0_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#e05ba107-2d87-4598-9170-b0d4001eeee0_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e05ba107-2d87-4598-9170-b0d4001eeee0]" id="e05ba107-2d87-4598-9170-b0d4001eeee0_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="e05ba107-2d87-4598-9170-b0d4001eeee0_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#e05ba107-2d87-4598-9170-b0d4001eeee0_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Demonstrates the significance of the problem</td>
+
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[6ecfdf5a-6675-4ee2-9d30-c9accc8a9288]" id="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[6ecfdf5a-6675-4ee2-9d30-c9accc8a9288]" id="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[6ecfdf5a-6675-4ee2-9d30-c9accc8a9288]" id="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[6ecfdf5a-6675-4ee2-9d30-c9accc8a9288]" id="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[6ecfdf5a-6675-4ee2-9d30-c9accc8a9288]" id="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#6ecfdf5a-6675-4ee2-9d30-c9accc8a9288_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="e168abde-336f-4b8a-967c-1f7fac2b6815">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Identifies key prior findings and provides a clear rationale of the study</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e168abde-336f-4b8a-967c-1f7fac2b6815]" id="e168abde-336f-4b8a-967c-1f7fac2b6815_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="e168abde-336f-4b8a-967c-1f7fac2b6815_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#e168abde-336f-4b8a-967c-1f7fac2b6815_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e168abde-336f-4b8a-967c-1f7fac2b6815]" id="e168abde-336f-4b8a-967c-1f7fac2b6815_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="e168abde-336f-4b8a-967c-1f7fac2b6815_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#e168abde-336f-4b8a-967c-1f7fac2b6815_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e168abde-336f-4b8a-967c-1f7fac2b6815]" id="e168abde-336f-4b8a-967c-1f7fac2b6815_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="e168abde-336f-4b8a-967c-1f7fac2b6815_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#e168abde-336f-4b8a-967c-1f7fac2b6815_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e168abde-336f-4b8a-967c-1f7fac2b6815]" id="e168abde-336f-4b8a-967c-1f7fac2b6815_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="e168abde-336f-4b8a-967c-1f7fac2b6815_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#e168abde-336f-4b8a-967c-1f7fac2b6815_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e168abde-336f-4b8a-967c-1f7fac2b6815]" id="e168abde-336f-4b8a-967c-1f7fac2b6815_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="e168abde-336f-4b8a-967c-1f7fac2b6815_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#e168abde-336f-4b8a-967c-1f7fac2b6815_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="235f3565-d2a0-4084-a4f3-f2cbd7c38af5">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Recognizes next important unanswered questions; generates new hypothesis based on historical and current context</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[235f3565-d2a0-4084-a4f3-f2cbd7c38af5]" id="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#235f3565-d2a0-4084-a4f3-f2cbd7c38af5_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[235f3565-d2a0-4084-a4f3-f2cbd7c38af5]" id="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+ <div class="custom-control-text" onclick="$('#235f3565-d2a0-4084-a4f3-f2cbd7c38af5_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[235f3565-d2a0-4084-a4f3-f2cbd7c38af5]" id="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#235f3565-d2a0-4084-a4f3-f2cbd7c38af5_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[235f3565-d2a0-4084-a4f3-f2cbd7c38af5]" id="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#235f3565-d2a0-4084-a4f3-f2cbd7c38af5_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[235f3565-d2a0-4084-a4f3-f2cbd7c38af5]" id="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="235f3565-d2a0-4084-a4f3-f2cbd7c38af5_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#235f3565-d2a0-4084-a4f3-f2cbd7c38af5_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="c83a1ea8-1a83-41b3-815a-9e76f1a39964">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Operationally defines the key terms</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c83a1ea8-1a83-41b3-815a-9e76f1a39964]" id="c83a1ea8-1a83-41b3-815a-9e76f1a39964_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="c83a1ea8-1a83-41b3-815a-9e76f1a39964_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#c83a1ea8-1a83-41b3-815a-9e76f1a39964_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c83a1ea8-1a83-41b3-815a-9e76f1a39964]" id="c83a1ea8-1a83-41b3-815a-9e76f1a39964_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="c83a1ea8-1a83-41b3-815a-9e76f1a39964_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#c83a1ea8-1a83-41b3-815a-9e76f1a39964_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c83a1ea8-1a83-41b3-815a-9e76f1a39964]" id="c83a1ea8-1a83-41b3-815a-9e76f1a39964_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="c83a1ea8-1a83-41b3-815a-9e76f1a39964_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#c83a1ea8-1a83-41b3-815a-9e76f1a39964_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c83a1ea8-1a83-41b3-815a-9e76f1a39964]" id="c83a1ea8-1a83-41b3-815a-9e76f1a39964_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="c83a1ea8-1a83-41b3-815a-9e76f1a39964_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#c83a1ea8-1a83-41b3-815a-9e76f1a39964_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c83a1ea8-1a83-41b3-815a-9e76f1a39964]" id="c83a1ea8-1a83-41b3-815a-9e76f1a39964_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="c83a1ea8-1a83-41b3-815a-9e76f1a39964_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#c83a1ea8-1a83-41b3-815a-9e76f1a39964_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="8eed34f3-846c-403b-8893-cb833a13009c">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Describes assumptions, limitations, and scope of the study</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[8eed34f3-846c-403b-8893-cb833a13009c]" id="8eed34f3-846c-403b-8893-cb833a13009c_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="8eed34f3-846c-403b-8893-cb833a13009c_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#8eed34f3-846c-403b-8893-cb833a13009c_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[8eed34f3-846c-403b-8893-cb833a13009c]" id="8eed34f3-846c-403b-8893-cb833a13009c_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="8eed34f3-846c-403b-8893-cb833a13009c_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#8eed34f3-846c-403b-8893-cb833a13009c_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[8eed34f3-846c-403b-8893-cb833a13009c]" id="8eed34f3-846c-403b-8893-cb833a13009c_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="8eed34f3-846c-403b-8893-cb833a13009c_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#8eed34f3-846c-403b-8893-cb833a13009c_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[8eed34f3-846c-403b-8893-cb833a13009c]" id="8eed34f3-846c-403b-8893-cb833a13009c_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="8eed34f3-846c-403b-8893-cb833a13009c_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#8eed34f3-846c-403b-8893-cb833a13009c_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[8eed34f3-846c-403b-8893-cb833a13009c]" id="8eed34f3-846c-403b-8893-cb833a13009c_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="8eed34f3-846c-403b-8893-cb833a13009c_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#8eed34f3-846c-403b-8893-cb833a13009c_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab3" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Methods
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">N/A</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Designs and executes hypothesis-based experiments</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ea126fe-69d7-4b98-bcb3-ad80a43fd3de]" id="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ea126fe-69d7-4b98-bcb3-ad80a43fd3de]" id="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ea126fe-69d7-4b98-bcb3-ad80a43fd3de]" id="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ea126fe-69d7-4b98-bcb3-ad80a43fd3de]" id="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ea126fe-69d7-4b98-bcb3-ad80a43fd3de]" id="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#0ea126fe-69d7-4b98-bcb3-ad80a43fd3de_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="256ea79c-7820-46d2-9631-e3d52fc5ba98">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Proposes appropriate research protocols; explains the advantages and disadvantages of relevant protocols to address a specific question</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[256ea79c-7820-46d2-9631-e3d52fc5ba98]" id="256ea79c-7820-46d2-9631-e3d52fc5ba98_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="256ea79c-7820-46d2-9631-e3d52fc5ba98_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#256ea79c-7820-46d2-9631-e3d52fc5ba98_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[256ea79c-7820-46d2-9631-e3d52fc5ba98]" id="256ea79c-7820-46d2-9631-e3d52fc5ba98_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="256ea79c-7820-46d2-9631-e3d52fc5ba98_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#256ea79c-7820-46d2-9631-e3d52fc5ba98_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[256ea79c-7820-46d2-9631-e3d52fc5ba98]" id="256ea79c-7820-46d2-9631-e3d52fc5ba98_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="256ea79c-7820-46d2-9631-e3d52fc5ba98_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#256ea79c-7820-46d2-9631-e3d52fc5ba98_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[256ea79c-7820-46d2-9631-e3d52fc5ba98]" id="256ea79c-7820-46d2-9631-e3d52fc5ba98_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="256ea79c-7820-46d2-9631-e3d52fc5ba98_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#256ea79c-7820-46d2-9631-e3d52fc5ba98_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[256ea79c-7820-46d2-9631-e3d52fc5ba98]" id="256ea79c-7820-46d2-9631-e3d52fc5ba98_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="256ea79c-7820-46d2-9631-e3d52fc5ba98_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#256ea79c-7820-46d2-9631-e3d52fc5ba98_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="3db7d638-10e9-43a8-904c-297617ddb802">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Outlines alternative experimental approaches</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3db7d638-10e9-43a8-904c-297617ddb802]" id="3db7d638-10e9-43a8-904c-297617ddb802_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="3db7d638-10e9-43a8-904c-297617ddb802_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#3db7d638-10e9-43a8-904c-297617ddb802_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3db7d638-10e9-43a8-904c-297617ddb802]" id="3db7d638-10e9-43a8-904c-297617ddb802_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="3db7d638-10e9-43a8-904c-297617ddb802_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#3db7d638-10e9-43a8-904c-297617ddb802_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3db7d638-10e9-43a8-904c-297617ddb802]" id="3db7d638-10e9-43a8-904c-297617ddb802_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="3db7d638-10e9-43a8-904c-297617ddb802_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#3db7d638-10e9-43a8-904c-297617ddb802_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3db7d638-10e9-43a8-904c-297617ddb802]" id="3db7d638-10e9-43a8-904c-297617ddb802_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="3db7d638-10e9-43a8-904c-297617ddb802_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#3db7d638-10e9-43a8-904c-297617ddb802_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3db7d638-10e9-43a8-904c-297617ddb802]" id="3db7d638-10e9-43a8-904c-297617ddb802_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="3db7d638-10e9-43a8-904c-297617ddb802_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#3db7d638-10e9-43a8-904c-297617ddb802_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="88ea906c-8a11-4f1c-973b-1249c0d1ab80">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Selects appropriate statistical test and designs experimental data collection to support ultimate statistical analysis</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[88ea906c-8a11-4f1c-973b-1249c0d1ab80]" id="88ea906c-8a11-4f1c-973b-1249c0d1ab80_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="88ea906c-8a11-4f1c-973b-1249c0d1ab80_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#88ea906c-8a11-4f1c-973b-1249c0d1ab80_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[88ea906c-8a11-4f1c-973b-1249c0d1ab80]" id="88ea906c-8a11-4f1c-973b-1249c0d1ab80_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="88ea906c-8a11-4f1c-973b-1249c0d1ab80_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#88ea906c-8a11-4f1c-973b-1249c0d1ab80_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[88ea906c-8a11-4f1c-973b-1249c0d1ab80]" id="88ea906c-8a11-4f1c-973b-1249c0d1ab80_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="88ea906c-8a11-4f1c-973b-1249c0d1ab80_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#88ea906c-8a11-4f1c-973b-1249c0d1ab80_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[88ea906c-8a11-4f1c-973b-1249c0d1ab80]" id="88ea906c-8a11-4f1c-973b-1249c0d1ab80_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="88ea906c-8a11-4f1c-973b-1249c0d1ab80_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#88ea906c-8a11-4f1c-973b-1249c0d1ab80_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[88ea906c-8a11-4f1c-973b-1249c0d1ab80]" id="88ea906c-8a11-4f1c-973b-1249c0d1ab80_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="88ea906c-8a11-4f1c-973b-1249c0d1ab80_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#88ea906c-8a11-4f1c-973b-1249c0d1ab80_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="f275b585-f0d0-4bb0-89ec-aa87fbeca152">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Proposes appropriate database, software tools, and algorithms relevant to the study </td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f275b585-f0d0-4bb0-89ec-aa87fbeca152]" id="f275b585-f0d0-4bb0-89ec-aa87fbeca152_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="f275b585-f0d0-4bb0-89ec-aa87fbeca152_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#f275b585-f0d0-4bb0-89ec-aa87fbeca152_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f275b585-f0d0-4bb0-89ec-aa87fbeca152]" id="f275b585-f0d0-4bb0-89ec-aa87fbeca152_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="f275b585-f0d0-4bb0-89ec-aa87fbeca152_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#f275b585-f0d0-4bb0-89ec-aa87fbeca152_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f275b585-f0d0-4bb0-89ec-aa87fbeca152]" id="f275b585-f0d0-4bb0-89ec-aa87fbeca152_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="f275b585-f0d0-4bb0-89ec-aa87fbeca152_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#f275b585-f0d0-4bb0-89ec-aa87fbeca152_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+ 
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f275b585-f0d0-4bb0-89ec-aa87fbeca152]" id="f275b585-f0d0-4bb0-89ec-aa87fbeca152_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="f275b585-f0d0-4bb0-89ec-aa87fbeca152_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#f275b585-f0d0-4bb0-89ec-aa87fbeca152_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f275b585-f0d0-4bb0-89ec-aa87fbeca152]" id="f275b585-f0d0-4bb0-89ec-aa87fbeca152_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="f275b585-f0d0-4bb0-89ec-aa87fbeca152_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#f275b585-f0d0-4bb0-89ec-aa87fbeca152_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f275b585-f0d0-4bb0-89ec-aa87fbeca152]" id="f275b585-f0d0-4bb0-89ec-aa87fbeca152_na" value="na">
+<label class="custom-control-label" for="f275b585-f0d0-4bb0-89ec-aa87fbeca152_na"></label>
+<div class="custom-control-text" onclick="$('#f275b585-f0d0-4bb0-89ec-aa87fbeca152_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab4" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Results
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">N/A</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="2d670d6d-8e55-4573-9a34-fdd61a101785">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Presents the analysis results in a manner that addresses the research questions</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2d670d6d-8e55-4573-9a34-fdd61a101785]" id="2d670d6d-8e55-4573-9a34-fdd61a101785_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="2d670d6d-8e55-4573-9a34-fdd61a101785_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#2d670d6d-8e55-4573-9a34-fdd61a101785_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2d670d6d-8e55-4573-9a34-fdd61a101785]" id="2d670d6d-8e55-4573-9a34-fdd61a101785_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="2d670d6d-8e55-4573-9a34-fdd61a101785_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#2d670d6d-8e55-4573-9a34-fdd61a101785_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2d670d6d-8e55-4573-9a34-fdd61a101785]" id="2d670d6d-8e55-4573-9a34-fdd61a101785_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="2d670d6d-8e55-4573-9a34-fdd61a101785_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#2d670d6d-8e55-4573-9a34-fdd61a101785_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2d670d6d-8e55-4573-9a34-fdd61a101785]" id="2d670d6d-8e55-4573-9a34-fdd61a101785_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="2d670d6d-8e55-4573-9a34-fdd61a101785_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#2d670d6d-8e55-4573-9a34-fdd61a101785_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2d670d6d-8e55-4573-9a34-fdd61a101785]" id="2d670d6d-8e55-4573-9a34-fdd61a101785_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="2d670d6d-8e55-4573-9a34-fdd61a101785_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#2d670d6d-8e55-4573-9a34-fdd61a101785_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="46d3910f-a9ca-43b1-b49a-cb4757ca348f">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Tables and figures are as self-descriptive as possible to standard Doctoral Study format</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[46d3910f-a9ca-43b1-b49a-cb4757ca348f]" id="46d3910f-a9ca-43b1-b49a-cb4757ca348f_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="46d3910f-a9ca-43b1-b49a-cb4757ca348f_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#46d3910f-a9ca-43b1-b49a-cb4757ca348f_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[46d3910f-a9ca-43b1-b49a-cb4757ca348f]" id="46d3910f-a9ca-43b1-b49a-cb4757ca348f_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="46d3910f-a9ca-43b1-b49a-cb4757ca348f_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#46d3910f-a9ca-43b1-b49a-cb4757ca348f_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[46d3910f-a9ca-43b1-b49a-cb4757ca348f]" id="46d3910f-a9ca-43b1-b49a-cb4757ca348f_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="46d3910f-a9ca-43b1-b49a-cb4757ca348f_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#46d3910f-a9ca-43b1-b49a-cb4757ca348f_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[46d3910f-a9ca-43b1-b49a-cb4757ca348f]" id="46d3910f-a9ca-43b1-b49a-cb4757ca348f_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="46d3910f-a9ca-43b1-b49a-cb4757ca348f_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#46d3910f-a9ca-43b1-b49a-cb4757ca348f_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[46d3910f-a9ca-43b1-b49a-cb4757ca348f]" id="46d3910f-a9ca-43b1-b49a-cb4757ca348f_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="46d3910f-a9ca-43b1-b49a-cb4757ca348f_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#46d3910f-a9ca-43b1-b49a-cb4757ca348f_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Consistently analyzes and interprets data; recognizes significant results; draws appropriate conclusions</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27]" id="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27]" id="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27]" id="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27]" id="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27]" id="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#9fbf51bc-6179-4fd3-a557-b4e4bd1bbb27_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab5" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Discussion
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">N/A</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="b83e9aee-d034-443c-b65f-d45c0edd1e26">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Discusses and interprets the research findings critically </td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b83e9aee-d034-443c-b65f-d45c0edd1e26]" id="b83e9aee-d034-443c-b65f-d45c0edd1e26_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="b83e9aee-d034-443c-b65f-d45c0edd1e26_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#b83e9aee-d034-443c-b65f-d45c0edd1e26_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b83e9aee-d034-443c-b65f-d45c0edd1e26]" id="b83e9aee-d034-443c-b65f-d45c0edd1e26_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="b83e9aee-d034-443c-b65f-d45c0edd1e26_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#b83e9aee-d034-443c-b65f-d45c0edd1e26_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b83e9aee-d034-443c-b65f-d45c0edd1e26]" id="b83e9aee-d034-443c-b65f-d45c0edd1e26_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="b83e9aee-d034-443c-b65f-d45c0edd1e26_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#b83e9aee-d034-443c-b65f-d45c0edd1e26_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b83e9aee-d034-443c-b65f-d45c0edd1e26]" id="b83e9aee-d034-443c-b65f-d45c0edd1e26_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="b83e9aee-d034-443c-b65f-d45c0edd1e26_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#b83e9aee-d034-443c-b65f-d45c0edd1e26_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b83e9aee-d034-443c-b65f-d45c0edd1e26]" id="b83e9aee-d034-443c-b65f-d45c0edd1e26_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="b83e9aee-d034-443c-b65f-d45c0edd1e26_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#b83e9aee-d034-443c-b65f-d45c0edd1e26_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="523d438b-0095-4f1d-8d8c-49c094ac03a2">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Describes the implications of the study findings</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[523d438b-0095-4f1d-8d8c-49c094ac03a2]" id="523d438b-0095-4f1d-8d8c-49c094ac03a2_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="523d438b-0095-4f1d-8d8c-49c094ac03a2_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#523d438b-0095-4f1d-8d8c-49c094ac03a2_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[523d438b-0095-4f1d-8d8c-49c094ac03a2]" id="523d438b-0095-4f1d-8d8c-49c094ac03a2_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="523d438b-0095-4f1d-8d8c-49c094ac03a2_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#523d438b-0095-4f1d-8d8c-49c094ac03a2_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[523d438b-0095-4f1d-8d8c-49c094ac03a2]" id="523d438b-0095-4f1d-8d8c-49c094ac03a2_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="523d438b-0095-4f1d-8d8c-49c094ac03a2_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#523d438b-0095-4f1d-8d8c-49c094ac03a2_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[523d438b-0095-4f1d-8d8c-49c094ac03a2]" id="523d438b-0095-4f1d-8d8c-49c094ac03a2_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="523d438b-0095-4f1d-8d8c-49c094ac03a2_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#523d438b-0095-4f1d-8d8c-49c094ac03a2_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[523d438b-0095-4f1d-8d8c-49c094ac03a2]" id="523d438b-0095-4f1d-8d8c-49c094ac03a2_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="523d438b-0095-4f1d-8d8c-49c094ac03a2_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#523d438b-0095-4f1d-8d8c-49c094ac03a2_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+ </div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="56ffb55e-11cc-4c7b-819e-92c518c4c77e">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Includes a sound `Future Directions` perspective on the dissertation research</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[56ffb55e-11cc-4c7b-819e-92c518c4c77e]" id="56ffb55e-11cc-4c7b-819e-92c518c4c77e_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="56ffb55e-11cc-4c7b-819e-92c518c4c77e_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#56ffb55e-11cc-4c7b-819e-92c518c4c77e_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[56ffb55e-11cc-4c7b-819e-92c518c4c77e]" id="56ffb55e-11cc-4c7b-819e-92c518c4c77e_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="56ffb55e-11cc-4c7b-819e-92c518c4c77e_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#56ffb55e-11cc-4c7b-819e-92c518c4c77e_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[56ffb55e-11cc-4c7b-819e-92c518c4c77e]" id="56ffb55e-11cc-4c7b-819e-92c518c4c77e_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="56ffb55e-11cc-4c7b-819e-92c518c4c77e_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#56ffb55e-11cc-4c7b-819e-92c518c4c77e_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[56ffb55e-11cc-4c7b-819e-92c518c4c77e]" id="56ffb55e-11cc-4c7b-819e-92c518c4c77e_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="56ffb55e-11cc-4c7b-819e-92c518c4c77e_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#56ffb55e-11cc-4c7b-819e-92c518c4c77e_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[56ffb55e-11cc-4c7b-819e-92c518c4c77e]" id="56ffb55e-11cc-4c7b-819e-92c518c4c77e_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="56ffb55e-11cc-4c7b-819e-92c518c4c77e_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#56ffb55e-11cc-4c7b-819e-92c518c4c77e_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab6" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Oral Exam
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">N/A</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="7ea32863-4225-4f31-a104-4ba07fa03977">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Organization and clarity of dissertation seminar: graphics, data, and text</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7ea32863-4225-4f31-a104-4ba07fa03977]" id="7ea32863-4225-4f31-a104-4ba07fa03977_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="7ea32863-4225-4f31-a104-4ba07fa03977_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#7ea32863-4225-4f31-a104-4ba07fa03977_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7ea32863-4225-4f31-a104-4ba07fa03977]" id="7ea32863-4225-4f31-a104-4ba07fa03977_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="7ea32863-4225-4f31-a104-4ba07fa03977_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#7ea32863-4225-4f31-a104-4ba07fa03977_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7ea32863-4225-4f31-a104-4ba07fa03977]" id="7ea32863-4225-4f31-a104-4ba07fa03977_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="7ea32863-4225-4f31-a104-4ba07fa03977_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#7ea32863-4225-4f31-a104-4ba07fa03977_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7ea32863-4225-4f31-a104-4ba07fa03977]" id="7ea32863-4225-4f31-a104-4ba07fa03977_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="7ea32863-4225-4f31-a104-4ba07fa03977_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#7ea32863-4225-4f31-a104-4ba07fa03977_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7ea32863-4225-4f31-a104-4ba07fa03977]" id="7ea32863-4225-4f31-a104-4ba07fa03977_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="7ea32863-4225-4f31-a104-4ba07fa03977_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#7ea32863-4225-4f31-a104-4ba07fa03977_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="2110936b-57cd-48ed-9e61-91fe7ed62c57">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Demonstrate advanced core knowledge and command of relevant literature</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2110936b-57cd-48ed-9e61-91fe7ed62c57]" id="2110936b-57cd-48ed-9e61-91fe7ed62c57_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="2110936b-57cd-48ed-9e61-91fe7ed62c57_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#2110936b-57cd-48ed-9e61-91fe7ed62c57_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2110936b-57cd-48ed-9e61-91fe7ed62c57]" id="2110936b-57cd-48ed-9e61-91fe7ed62c57_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="2110936b-57cd-48ed-9e61-91fe7ed62c57_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#2110936b-57cd-48ed-9e61-91fe7ed62c57_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2110936b-57cd-48ed-9e61-91fe7ed62c57]" id="2110936b-57cd-48ed-9e61-91fe7ed62c57_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="2110936b-57cd-48ed-9e61-91fe7ed62c57_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#2110936b-57cd-48ed-9e61-91fe7ed62c57_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2110936b-57cd-48ed-9e61-91fe7ed62c57]" id="2110936b-57cd-48ed-9e61-91fe7ed62c57_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="2110936b-57cd-48ed-9e61-91fe7ed62c57_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#2110936b-57cd-48ed-9e61-91fe7ed62c57_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2110936b-57cd-48ed-9e61-91fe7ed62c57]" id="2110936b-57cd-48ed-9e61-91fe7ed62c57_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="2110936b-57cd-48ed-9e61-91fe7ed62c57_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#2110936b-57cd-48ed-9e61-91fe7ed62c57_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="e6728d2a-13c2-4c00-8060-c98242aa9a43">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Effectively communicate significance of dissertation research and how it advanced the field</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e6728d2a-13c2-4c00-8060-c98242aa9a43]" id="e6728d2a-13c2-4c00-8060-c98242aa9a43_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="e6728d2a-13c2-4c00-8060-c98242aa9a43_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#e6728d2a-13c2-4c00-8060-c98242aa9a43_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e6728d2a-13c2-4c00-8060-c98242aa9a43]" id="e6728d2a-13c2-4c00-8060-c98242aa9a43_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="e6728d2a-13c2-4c00-8060-c98242aa9a43_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#e6728d2a-13c2-4c00-8060-c98242aa9a43_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e6728d2a-13c2-4c00-8060-c98242aa9a43]" id="e6728d2a-13c2-4c00-8060-c98242aa9a43_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="e6728d2a-13c2-4c00-8060-c98242aa9a43_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#e6728d2a-13c2-4c00-8060-c98242aa9a43_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e6728d2a-13c2-4c00-8060-c98242aa9a43]" id="e6728d2a-13c2-4c00-8060-c98242aa9a43_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="e6728d2a-13c2-4c00-8060-c98242aa9a43_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#e6728d2a-13c2-4c00-8060-c98242aa9a43_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[e6728d2a-13c2-4c00-8060-c98242aa9a43]" id="e6728d2a-13c2-4c00-8060-c98242aa9a43_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="e6728d2a-13c2-4c00-8060-c98242aa9a43_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#e6728d2a-13c2-4c00-8060-c98242aa9a43_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="840f5e06-b512-4d86-a904-c1f897a45b54">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Answer questions effectively</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[840f5e06-b512-4d86-a904-c1f897a45b54]" id="840f5e06-b512-4d86-a904-c1f897a45b54_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="840f5e06-b512-4d86-a904-c1f897a45b54_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#840f5e06-b512-4d86-a904-c1f897a45b54_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[840f5e06-b512-4d86-a904-c1f897a45b54]" id="840f5e06-b512-4d86-a904-c1f897a45b54_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="840f5e06-b512-4d86-a904-c1f897a45b54_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#840f5e06-b512-4d86-a904-c1f897a45b54_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[840f5e06-b512-4d86-a904-c1f897a45b54]" id="840f5e06-b512-4d86-a904-c1f897a45b54_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="840f5e06-b512-4d86-a904-c1f897a45b54_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#840f5e06-b512-4d86-a904-c1f897a45b54_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[840f5e06-b512-4d86-a904-c1f897a45b54]" id="840f5e06-b512-4d86-a904-c1f897a45b54_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="840f5e06-b512-4d86-a904-c1f897a45b54_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#840f5e06-b512-4d86-a904-c1f897a45b54_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[840f5e06-b512-4d86-a904-c1f897a45b54]" id="840f5e06-b512-4d86-a904-c1f897a45b54_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="840f5e06-b512-4d86-a904-c1f897a45b54_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#840f5e06-b512-4d86-a904-c1f897a45b54_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="table-secondary"></td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="row">&nbsp;</div>
+<div id="comment-sign-confirm" style="display: none;">
+<div class="card mb-3 mt-4 mb-4">
+<div class="card-header bg-light">
+<div class="media align-items-center">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#comments"></use>
+</svg>
+</div>
+<div class="media-body ml-2">
+<h5 class="mb-0 fs-0">Comment</h5>
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+<textarea rows="4" name="memo" cols="50" placeholder="Type Comments Here" class="form-control border-0 rounded-0"></textarea>
+</div>
+</div>
+<div class="row">&nbsp;</div>
+<div>&nbsp;</div>
+<button type="button" class="button" data-action="test" onclick="previewResult(1)">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#radar"></use>
+</svg>
+</div>
+Preview Your Vote
+</button>
+<button type="button" class="button button-blue" data-action="test" onclick="saveDraft()">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#pencil-ruler"></use>
+</svg>
+</div>
+Save Draft
+</button>
+<button type="button" id="save" class="button button-primary" data-loading-text="<div class='icon baseline'><svg aria-hidden='true' class='icon-spin'><use xlink:href='icons.svg#spinner-third'></use></svg></div> Save">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#save"></use>
+</svg>
+</div> Submit
+</button>
+<div id="result-preview"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.btnNext').click(function() {
+            $('.nav-tabs .active').parent().next('li').find('a').trigger('click');
+        });
+
+        $('.btnPrevious').click(function() {
+            $('.nav-tabs .active').parent().prev('li').find('a').trigger('click');
+        });
+    });
+</script>
+<div class="modal fade" id="confirm" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Confirm</h5>
+<button type="button" class="close btn btn-round" data-dismiss="modal" aria-label="Close">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#times"></use>
+</svg>
+</div>
+</button>
+</div>
+<div class="modal-body">
+<p id="check">Calculating results...</p>
+<div id="signature-pad" class="signature-pad">
+<div class="signature-pad--body">
+<canvas></canvas>
+</div>
+</div>
+<div class="alert alert-primary mt-3 mb-0" role="alert">
+Please sign clearly above since your live signature will be used to fill graduate school exam result document.
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary btn-sm" id="sign-clear">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#eraser"></use>
+</svg>
+</div>
+Clear
+</button>
+<button type="button" data-dismiss="modal" class="button button-danger">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#align-slash"></use>
+</svg>
+</div> No, Cancel
+</button>
+<button type="button" id="save-confirm" class="button button-primary" onclick="submit()" data-loading-text="<div class='icon baseline'><svg aria-hidden='true' class='icon-spin'><use xlink:href='icons.svg#spinner-third'></use></svg></div> Yes, Submit">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#save"></use>
+</svg>
+</div> Yes, Submit
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Information</h5>
+<button type="button" class="close btn btn-round" data-dismiss="modal" aria-label="Close">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#times"></use>
+</svg>
+</div>
+</button>
+</div>
+<div class="modal-body">
+<p id="error"></p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="initialNotice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+<div class="modal-dialog" role="document" style="min-width:50%">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLongTitle">Evaluation Form Information</h5>
+</div>
+<div class="modal-body">
+<p>Dear Faculty - Thank you for participating in the pilot implementation phase of <b>Duke Trainee Tracking Tool (T3).</b></p>
+<p><b>T3 Overview</b>: T3 is a web-based application being developed by the Office of Biomedical Graduate Education (OBGE)
+that documents and monitors progress of trainees enrolled in SoM biomedical research PhD programs. T3 captures
+critical elements of the training experience: lab rotations, affiliation with faculty mentor, preliminary examination,
+annual committee meetings, and dissertation defense. T3 provides ongoing data collection and utilizes competency-based
+learning assessment aligned to major milestone events. <i>The expectation is that student competencies will
+improve over the various stages of training. T3 will allow deficiencies or weaknesses in specific learning areas to be
+identified early, so trainees have opportunities to attain higher levels of mastery through the remainder of the
+training period</i>. T3 offers transparency of expectations for students and faculty and provides clear, consistent, and
+standardized metrics for evaluating trainee development and progress toward degree.</p>
+<p><b> Evaluation Form</b>: Each member of the committee will access their individual evaluation
+form via common link provided. Faculty will sign into T3 using NetID and password. The evaluation form is divided into
+6 sections:
+Abstract, Background, Methods, Results, Discussion, Oral Exam.
+The first 5 sections (Abstract, Background, Methods, Results, Discussion)
+refer to both the written and oral exam. In each of the 6 sections, student learning outcomes will be scored based on the following scale:
+Poor (1), Insufficient (2), Competent (3), Very Good (4), and Superlative (5), N/A (6).</p>
+<p>The following guidelines may aid in scoring:</p>
+<div class="table-responsive-lg">
+<table class="table">
+<tbody>
+<tr>
+<th scope="row">Poor (1)</th>
+<td>Weak performance; trainee exhibits little to no competency and requires additional foundational training</td>
+</tr>
+<tr>
+<th scope="row">Insufficient (2)</th>
+<td>More weakness than strength; trainee exhibits inadequate competency that denotes significant room for improvement</td>
+</tr>
+<tr>
+<th scope="row">Competent (3)</th>
+<td>More strength than weakness; trainee exhibits reasonable or adequate competency with room for improvement</td>
+</tr>
+<tr>
+<th scope="row">Very good (4)</th>
+<td>Little weakness and significant strength; trainee exhibits a high level of competency with modest room for improvement</td>
+</tr>
+<tr>
+<th scope="row">Superlative (5)</th>
+<td>Extremely strong; trainee exhibits the highest level of competency</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="font-weight-bold">Guidelines for Determining Pass/Fail ( Exam):</p>
+<p><span class="font-weight-bold font-italic"><u>Pass</u></span>: An average score (across all sections and student learning outcomes) of <b>greater than or equal to <font color="blue"><u>4.00</u></font></b>
+for each committee member constitutes an affirmative (Pass) vote. Passing the requires at least 4 affirmative (Pass) votes.</p>
+<p><span class="font-weight-bold font-italic"><u>Fail</u></span>: If the student receives fewer than 4 affirmative votes, the committee should score the exam as a Fail. A student
+who fails the may apply, with the unanimous consent of the examination committee and the DGS, for the privilege of a second examination to be
+taken between three and six months (in case of prelim) or at least six months (in case of dissertation) after the date of the first. Successful completion of the second examination requires the affirmative vote of all original committee members.</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-dismiss="modal">OK, I understand</button>
+</div>
+</div>
+</div>
+</div>
+<style type="text/css">
+    .signature-pad, .signature-pad--body, .signature-pad--body canvas {
+        width: 100%;
+        height: unset;
+        min-height: 120px;
+    }
+</style>
+<script type="text/javascript">
+    $('#initialNotice').modal('show');
+</script>
+<script type="text/javascript">
+
+    var wrapper = document.getElementById("signature-pad");
+    var clearButton = document.getElementById("sign-clear");
+    var canvas = wrapper.querySelector("canvas");
+    var signaturePad = new SignaturePad(canvas, {
+        backgroundColor: 'rgb(0, 0, 0, 0)'
+    });
+
+    clearButton.addEventListener("click", function (event) {
+        signaturePad.clear();
+    });
+
+    function resizeCanvas() {
+        var ratio =  Math.max(window.devicePixelRatio || 1, 1);
+
+        canvas.width = canvas.offsetWidth * ratio;
+        canvas.height = canvas.offsetHeight * ratio;
+        canvas.getContext("2d").scale(ratio, ratio);
+
+        signaturePad.clear();
+    }
+
+    function submitSignature() {
+        var status = false;
+        var dataURL = signaturePad.toDataURL('image/svg+xml');
+        var blob = dataURLToBlob(dataURL);
+        var url = window.URL.createObjectURL(blob);
+
+        var dataform = new FormData();
+        dataform.append("file", blob, "signature.svg");
+
+        var request = new XMLHttpRequest();
+        request.open("POST", "/files/upload");
+
+        request.onreadystatechange = function() {
+            if (request.readyState == 4 && request.status == 200) {
+                submitForm();
+            } else if (request.status == 500) {
+                alert("There was an error sending signature to the file server. Please retry after at least 15 minutes if it is your first signature `re-submission` to T3 system.");
+                console.log("Failed. Not continue.")
+            }
+        };
+
+        request.send(dataform);
+        window.URL.revokeObjectURL(url);
+        return status;
+    }
+
+    
+    
+    function dataURLToBlob(dataURL) {
+        
+        var parts = dataURL.split(';base64,');
+        var contentType = parts[0].split(":")[1];
+        var raw = window.atob(parts[1]);
+        var rawLength = raw.length;
+        var uInt8Array = new Uint8Array(rawLength);
+
+        for (var i = 0; i < rawLength; ++i) {
+            uInt8Array[i] = raw.charCodeAt(i);
+        }
+
+        return new Blob([uInt8Array], { type: contentType });
+    }
+
+
+</script>
+<script type="text/javascript">
+    function submit() {
+        
+        $("#save-confirm").button('loading');
+
+        $('#myModal').on('hide.bs.modal', function () {
+            $("#save-confirm").button('reset');
+        });
+
+        if( signaturePad.isEmpty() ) {
+            $("#error").html("Please sign the form.");
+            $('#myModal').modal("show");
+            return false;
+        } else if (signaturePad._data[0].points.length < 5 ) {
+            $("#error").html("Please try signing clearly again as your digital signature will be used to fill the graduate school form.");
+            $('#myModal').modal("show");
+            return false;
+        } else {
+            submitSignature();
+        }
+
+    }
+
+    function submitForm() {
+        $('#confirm').modal('hide');
+        $("#save").button('loading');
+        showToastMessage("This is just a mockup", "now", "This is just a mockup.", "warning");
+		// spf.navigate($("#form").attr("action"), {"method":"POST","headers":{"Content-Type":"application/json"},"postData": JSON.stringify($( "#form" ).serializeJSON())});
+    }
+
+    $("#form").on( "submit", function( event ) {
+        event.preventDefault();
+
+        $("input:radio").each(function(){
+            if ($('input:radio:checked').length !== $("input:hidden[name=question\\[\\]]").length) {
+                $("#error").html("Please answer all the evaluation questions.");
+                $('#myModal').modal("show");
+                return false;
+            }
+        });
+
+        showToastMessage("This is just a mockup", "now", "This is just a mockup.", "warning");
+
+        $(document).on('shown.bs.modal', '#confirm', function (e) {
+            
+            resizeCanvas();
+        });
+
+        $('#confirm').modal("show");
+
+    });
+
+    $("#save").click(function() {
+        var $btn = $(this);
+        $btn.button('loading');
+
+        $("#form").submit();
+
+        $('#confirm').on('hidden.bs.modal', function () {
+            $btn.button('reset');
+        });
+    });
+
+    autosize($('textarea'));
+
+    $('input[type=radio]').change(function() {
+        if ($('input:radio:checked').length === $("input:hidden[name=question\\[\\]]").length) {
+            $( "#comment-sign-confirm" ).show();
+            $( "#evaluation-form-notice" ).hide();
+        }
+    });
+
+    function previewResult(flagBool) {
+        showToastMessage("This is just a mockup", "now", "This is just a mockup.", "warning");
+    }
+
+    function saveDraft() {
+        showToastMessage("This is just a mockup", "now", "This is just a mockup.", "warning");
+    }
+
+    $(document).ready(function() {
+        if ($('input:radio:checked').length === $("input:hidden[name=question\\[\\]]").length) {
+            $( "#comment-sign-confirm" ).show();
+            $( "#evaluation-form-notice" ).hide();
+        }
+    });
+</script>
+</div>
+</div>
+</div>
+</main>
+<script type="text/javascript">
+    $(document).on('click','.navbar-collapse.show',function(e) {
+        if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+            $(this).collapse('hide');
+            $('body').scrollTop(0);
+        }
+    });
+    var $buoop = {required:{e:-1,f:-1,o:-1,s:-1,c:-1},insecure:true,unsupported:true,api:2020.02,text: "Your browser is <b><font color='red'><u>NOT</u></font> supported</b>. <a class='btn btn-success' href='https://browser-update.org/update-browser.html' target='_blank'>Update Your Browser</a>"};
+    function $buo_f(){
+        var e = document.createElement("script");
+        e.src = "https://browser-update.org/update.min.js";
+        document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+</script>
+</body>
+</html>

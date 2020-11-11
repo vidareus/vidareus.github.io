@@ -1,0 +1,1916 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Evaluations</title>
+<meta charset="utf-8">
+<meta name="description" content="Duke T3">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Duke T3">
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-192x192.png">
+<link rel="apple-touch-icon" sizes="167x167" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-192x192.png">
+<link rel="manifest" href="https://obge.lollel.com/manifest.json">
+<link href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.03.08.21/images/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@master/css/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.09.11.15/js/script.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css" integrity="sha256-bDcYpq5PLrWdVEWBIoJVgzkhWK2GZPhYBmECca0x85I=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.min.js" integrity="sha256-XM3WFGub3gsB764gNg+3Qosv9Cq6NE2O/mQ7AxwNt6o=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+<style type="text/css">
+        body {
+            font-size: 1.1em;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .table th, .table td, .table thead th {
+            vertical-align: middle;
+        }
+        .tools {
+            font-size: 1.25rem;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+<div id="loading" class="loading">
+<h1>
+<div class="icon baseline">
+<svg aria-hidden="true" class="icon-spin">
+<use xlink:href="icons.svg#spinner-third"></use>
+</svg>
+</div>
+</h1>
+</div>
+<main class="inner-body">
+<div class="layout layout-nav-side">
+<div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top spf-link">
+<a class="navbar-brand" href="/dashboard">
+<img alt="Duke T3" src="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.09.26.16/images/logos/logo.svg" width="50" />&nbsp;<strong>&nbsp;&nbsp;T3<sup><sup><i>beta</i></sup></sup></strong>
+</a>
+<div class="d-flex align-items-center">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<span style="font-size:1.25rem">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#bars"></use>
+</svg>
+</div>
+</span>
+</button>
+<div class="d-block d-lg-none ml-2">
+<div class="dropdown">
+<a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img alt="Image" src="https://coubisou.vidare.us/thumbnail/123456789" class="avatar" />
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="/people/my" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#user"></use>
+</svg>
+</div>
+Profile
+</a>
+<a href="/accounts/logout" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#sign-out-alt"></use>
+</svg>
+</div>
+Logout
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse navbar-collapse flex-column" id="navbar-collapse">
+<ul class="navbar-nav d-lg-block">
+<li class="nav-item">
+<a class="nav-link" href="/dashboard">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#chalkboard"></use>
+</svg>
+</div>
+Dashboard
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/students">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#users-class"></use>
+</svg>
+</div>
+My Students
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/frs/edit">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#telescope"></use>
+</svg>
+</div>
+Research Training Profile
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/resources">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#radar"></use>
+</svg>
+</div>
+Resource Library
+</a>
+</li>
+</ul>
+</div>
+<div class="d-none d-lg-block">
+<div class="dropup">
+<a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img alt="avatar" src="https://coubisou.vidare.us/thumbnail/123456789" class="avatar" /> <span style="color:whitesmoke;font-weight:bold">Faculty</span>
+</a>
+<div class="dropdown-menu">
+<a href="/people/my" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#user"></use>
+</svg>
+</div>
+Profile
+</a>
+<a href="/accounts/logout" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#sign-out-alt"></use>
+</svg>
+</div>
+Logout
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="main-container" class="main-container">
+<div id="content" class="container">
+<form id="form" method="POST" class="checklist">
+<input type="hidden" name="taskID" value="602">
+<div class="row justify-content-center">
+<div id="evaluation" class="col-lg-12 col-xl-12">
+<div class="page-header">
+<h1>Annual Committee Meeting Evaluation Form</h1>
+<p class="lead">for Student</p>
+<div id="evaluation-form-notice" class="alert alert-primary" role="alert">
+Comment box will appear once all evaluation questions are answered.
+</div>
+<div class="d-flex align-items-center">
+<ul class="avatars">
+</ul>
+</div>
+</div>
+<ul class="nav nav-tabs nav-fill mb-4" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Research Progress</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+Professional Development Progress
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+Deep Knowledge of relevant Tools and Approaches
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
+
+Experimental Skills
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">
+Collaboration and Team Science
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">
+RCR &amp; Research Ethics and R&amp;R
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab7" role="tab" aria-controls="tab7" aria-selected="false">
+Leadership Skills
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab8" role="tab" aria-controls="tab8" aria-selected="false">
+Resilience and Survival Skills
+</a>
+</li>
+</ul>
+<div class="tab-content mb-4">
+<div class="tab-pane fade active show" id="tab1" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Research Progress
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">Unable to Rate</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Research progress summary report meets expectations for progress to degree</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c01f4251-1fd4-4c3b-a2df-da2ded0a65b4]" id="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c01f4251-1fd4-4c3b-a2df-da2ded0a65b4]" id="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c01f4251-1fd4-4c3b-a2df-da2ded0a65b4]" id="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c01f4251-1fd4-4c3b-a2df-da2ded0a65b4]" id="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c01f4251-1fd4-4c3b-a2df-da2ded0a65b4]" id="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[c01f4251-1fd4-4c3b-a2df-da2ded0a65b4]" id="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_na" value="na">
+<label class="custom-control-label" for="c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_na"></label>
+<div class="custom-control-text" onclick="$('#c01f4251-1fd4-4c3b-a2df-da2ded0a65b4_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="3b1daa06-532a-49c4-84ca-01d8c66f1d31">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Oral presentation of research progress</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3b1daa06-532a-49c4-84ca-01d8c66f1d31]" id="3b1daa06-532a-49c4-84ca-01d8c66f1d31_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="3b1daa06-532a-49c4-84ca-01d8c66f1d31_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#3b1daa06-532a-49c4-84ca-01d8c66f1d31_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3b1daa06-532a-49c4-84ca-01d8c66f1d31]" id="3b1daa06-532a-49c4-84ca-01d8c66f1d31_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="3b1daa06-532a-49c4-84ca-01d8c66f1d31_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#3b1daa06-532a-49c4-84ca-01d8c66f1d31_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3b1daa06-532a-49c4-84ca-01d8c66f1d31]" id="3b1daa06-532a-49c4-84ca-01d8c66f1d31_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="3b1daa06-532a-49c4-84ca-01d8c66f1d31_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#3b1daa06-532a-49c4-84ca-01d8c66f1d31_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3b1daa06-532a-49c4-84ca-01d8c66f1d31]" id="3b1daa06-532a-49c4-84ca-01d8c66f1d31_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="3b1daa06-532a-49c4-84ca-01d8c66f1d31_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#3b1daa06-532a-49c4-84ca-01d8c66f1d31_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3b1daa06-532a-49c4-84ca-01d8c66f1d31]" id="3b1daa06-532a-49c4-84ca-01d8c66f1d31_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="3b1daa06-532a-49c4-84ca-01d8c66f1d31_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#3b1daa06-532a-49c4-84ca-01d8c66f1d31_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3b1daa06-532a-49c4-84ca-01d8c66f1d31]" id="3b1daa06-532a-49c4-84ca-01d8c66f1d31_na" value="na">
+<label class="custom-control-label" for="3b1daa06-532a-49c4-84ca-01d8c66f1d31_na"></label>
+<div class="custom-control-text" onclick="$('#3b1daa06-532a-49c4-84ca-01d8c66f1d31_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="f7c50204-11be-4144-b9a1-23e9ec69c0ec">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Core knowledge and command of relevant literature</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f7c50204-11be-4144-b9a1-23e9ec69c0ec]" id="f7c50204-11be-4144-b9a1-23e9ec69c0ec_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="f7c50204-11be-4144-b9a1-23e9ec69c0ec_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#f7c50204-11be-4144-b9a1-23e9ec69c0ec_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f7c50204-11be-4144-b9a1-23e9ec69c0ec]" id="f7c50204-11be-4144-b9a1-23e9ec69c0ec_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="f7c50204-11be-4144-b9a1-23e9ec69c0ec_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#f7c50204-11be-4144-b9a1-23e9ec69c0ec_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f7c50204-11be-4144-b9a1-23e9ec69c0ec]" id="f7c50204-11be-4144-b9a1-23e9ec69c0ec_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="f7c50204-11be-4144-b9a1-23e9ec69c0ec_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#f7c50204-11be-4144-b9a1-23e9ec69c0ec_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f7c50204-11be-4144-b9a1-23e9ec69c0ec]" id="f7c50204-11be-4144-b9a1-23e9ec69c0ec_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="f7c50204-11be-4144-b9a1-23e9ec69c0ec_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#f7c50204-11be-4144-b9a1-23e9ec69c0ec_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f7c50204-11be-4144-b9a1-23e9ec69c0ec]" id="f7c50204-11be-4144-b9a1-23e9ec69c0ec_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="f7c50204-11be-4144-b9a1-23e9ec69c0ec_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#f7c50204-11be-4144-b9a1-23e9ec69c0ec_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[f7c50204-11be-4144-b9a1-23e9ec69c0ec]" id="f7c50204-11be-4144-b9a1-23e9ec69c0ec_na" value="na">
+<label class="custom-control-label" for="f7c50204-11be-4144-b9a1-23e9ec69c0ec_na"></label>
+<div class="custom-control-text" onclick="$('#f7c50204-11be-4144-b9a1-23e9ec69c0ec_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="aea3967f-4c91-46d1-9b30-412881a0d97b">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Future directions/plans to meet the targets towards the dissertation</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aea3967f-4c91-46d1-9b30-412881a0d97b]" id="aea3967f-4c91-46d1-9b30-412881a0d97b_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="aea3967f-4c91-46d1-9b30-412881a0d97b_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#aea3967f-4c91-46d1-9b30-412881a0d97b_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aea3967f-4c91-46d1-9b30-412881a0d97b]" id="aea3967f-4c91-46d1-9b30-412881a0d97b_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="aea3967f-4c91-46d1-9b30-412881a0d97b_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#aea3967f-4c91-46d1-9b30-412881a0d97b_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aea3967f-4c91-46d1-9b30-412881a0d97b]" id="aea3967f-4c91-46d1-9b30-412881a0d97b_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="aea3967f-4c91-46d1-9b30-412881a0d97b_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#aea3967f-4c91-46d1-9b30-412881a0d97b_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aea3967f-4c91-46d1-9b30-412881a0d97b]" id="aea3967f-4c91-46d1-9b30-412881a0d97b_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="aea3967f-4c91-46d1-9b30-412881a0d97b_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#aea3967f-4c91-46d1-9b30-412881a0d97b_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aea3967f-4c91-46d1-9b30-412881a0d97b]" id="aea3967f-4c91-46d1-9b30-412881a0d97b_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="aea3967f-4c91-46d1-9b30-412881a0d97b_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#aea3967f-4c91-46d1-9b30-412881a0d97b_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aea3967f-4c91-46d1-9b30-412881a0d97b]" id="aea3967f-4c91-46d1-9b30-412881a0d97b_na" value="na">
+<label class="custom-control-label" for="aea3967f-4c91-46d1-9b30-412881a0d97b_na"></label>
+<div class="custom-control-text" onclick="$('#aea3967f-4c91-46d1-9b30-412881a0d97b_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="b18d8ae1-4fff-4675-93aa-5d5d33e99f38">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Overall dissertation progress to date</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b18d8ae1-4fff-4675-93aa-5d5d33e99f38]" id="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#b18d8ae1-4fff-4675-93aa-5d5d33e99f38_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b18d8ae1-4fff-4675-93aa-5d5d33e99f38]" id="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#b18d8ae1-4fff-4675-93aa-5d5d33e99f38_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b18d8ae1-4fff-4675-93aa-5d5d33e99f38]" id="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#b18d8ae1-4fff-4675-93aa-5d5d33e99f38_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b18d8ae1-4fff-4675-93aa-5d5d33e99f38]" id="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#b18d8ae1-4fff-4675-93aa-5d5d33e99f38_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b18d8ae1-4fff-4675-93aa-5d5d33e99f38]" id="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#b18d8ae1-4fff-4675-93aa-5d5d33e99f38_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+ </td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b18d8ae1-4fff-4675-93aa-5d5d33e99f38]" id="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_na" value="na">
+<label class="custom-control-label" for="b18d8ae1-4fff-4675-93aa-5d5d33e99f38_na"></label>
+<div class="custom-control-text" onclick="$('#b18d8ae1-4fff-4675-93aa-5d5d33e99f38_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab2" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Professional Development Progress
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">Unable to Rate</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Professional development summary report</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7]" id="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7]" id="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7]" id="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7]" id="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7]" id="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7]" id="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_na" value="na">
+<label class="custom-control-label" for="a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_na"></label>
+<div class="custom-control-text" onclick="$('#a3a6c301-fb3e-40b6-9473-8a2b9d81c9b7_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+ <input type="hidden" name="question[]" value="11c72024-5fee-4dbd-8bf0-224ec8cb5c25">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Future directions/plans to meet modified/unmet goals</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[11c72024-5fee-4dbd-8bf0-224ec8cb5c25]" id="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#11c72024-5fee-4dbd-8bf0-224ec8cb5c25_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[11c72024-5fee-4dbd-8bf0-224ec8cb5c25]" id="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#11c72024-5fee-4dbd-8bf0-224ec8cb5c25_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[11c72024-5fee-4dbd-8bf0-224ec8cb5c25]" id="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#11c72024-5fee-4dbd-8bf0-224ec8cb5c25_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[11c72024-5fee-4dbd-8bf0-224ec8cb5c25]" id="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#11c72024-5fee-4dbd-8bf0-224ec8cb5c25_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[11c72024-5fee-4dbd-8bf0-224ec8cb5c25]" id="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#11c72024-5fee-4dbd-8bf0-224ec8cb5c25_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[11c72024-5fee-4dbd-8bf0-224ec8cb5c25]" id="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_na" value="na">
+<label class="custom-control-label" for="11c72024-5fee-4dbd-8bf0-224ec8cb5c25_na"></label>
+<div class="custom-control-text" onclick="$('#11c72024-5fee-4dbd-8bf0-224ec8cb5c25_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="25e087ad-001e-4707-9ce3-64fdb475d820">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Overall professional development to date</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[25e087ad-001e-4707-9ce3-64fdb475d820]" id="25e087ad-001e-4707-9ce3-64fdb475d820_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="25e087ad-001e-4707-9ce3-64fdb475d820_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#25e087ad-001e-4707-9ce3-64fdb475d820_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[25e087ad-001e-4707-9ce3-64fdb475d820]" id="25e087ad-001e-4707-9ce3-64fdb475d820_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="25e087ad-001e-4707-9ce3-64fdb475d820_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#25e087ad-001e-4707-9ce3-64fdb475d820_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+ <div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[25e087ad-001e-4707-9ce3-64fdb475d820]" id="25e087ad-001e-4707-9ce3-64fdb475d820_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="25e087ad-001e-4707-9ce3-64fdb475d820_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#25e087ad-001e-4707-9ce3-64fdb475d820_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[25e087ad-001e-4707-9ce3-64fdb475d820]" id="25e087ad-001e-4707-9ce3-64fdb475d820_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+ <label class="custom-control-label" for="25e087ad-001e-4707-9ce3-64fdb475d820_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#25e087ad-001e-4707-9ce3-64fdb475d820_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[25e087ad-001e-4707-9ce3-64fdb475d820]" id="25e087ad-001e-4707-9ce3-64fdb475d820_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="25e087ad-001e-4707-9ce3-64fdb475d820_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#25e087ad-001e-4707-9ce3-64fdb475d820_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[25e087ad-001e-4707-9ce3-64fdb475d820]" id="25e087ad-001e-4707-9ce3-64fdb475d820_na" value="na">
+<label class="custom-control-label" for="25e087ad-001e-4707-9ce3-64fdb475d820_na"></label>
+<div class="custom-control-text" onclick="$('#25e087ad-001e-4707-9ce3-64fdb475d820_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab3" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Deep Knowledge of relevant Tools and Approaches
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">Unable to Rate</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="ce4c8524-4181-48dd-9f9e-1d6a20f81e26">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Demonstrates comprehensive knowledge of tools and approaches.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ce4c8524-4181-48dd-9f9e-1d6a20f81e26]" id="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#ce4c8524-4181-48dd-9f9e-1d6a20f81e26_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ce4c8524-4181-48dd-9f9e-1d6a20f81e26]" id="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#ce4c8524-4181-48dd-9f9e-1d6a20f81e26_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ce4c8524-4181-48dd-9f9e-1d6a20f81e26]" id="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#ce4c8524-4181-48dd-9f9e-1d6a20f81e26_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ce4c8524-4181-48dd-9f9e-1d6a20f81e26]" id="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#ce4c8524-4181-48dd-9f9e-1d6a20f81e26_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ce4c8524-4181-48dd-9f9e-1d6a20f81e26]" id="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#ce4c8524-4181-48dd-9f9e-1d6a20f81e26_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ce4c8524-4181-48dd-9f9e-1d6a20f81e26]" id="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_na" value="na">
+<label class="custom-control-label" for="ce4c8524-4181-48dd-9f9e-1d6a20f81e26_na"></label>
+<div class="custom-control-text" onclick="$('#ce4c8524-4181-48dd-9f9e-1d6a20f81e26_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Assists other lab members in relevant techniques and approaches, both technically and theoretically.</td>
+
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4]" id="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4]" id="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4]" id="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4]" id="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4]" id="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4]" id="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_na" value="na">
+<label class="custom-control-label" for="95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_na"></label>
+<div class="custom-control-text" onclick="$('#95dcb0d6-b7b7-4fcd-9dbc-40765d1038a4_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab4" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Experimental Skills
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">Unable to Rate</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="aad6e640-4f16-4df2-bade-f35d51c78798">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Executes experimental procedures properly.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aad6e640-4f16-4df2-bade-f35d51c78798]" id="aad6e640-4f16-4df2-bade-f35d51c78798_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="aad6e640-4f16-4df2-bade-f35d51c78798_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#aad6e640-4f16-4df2-bade-f35d51c78798_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aad6e640-4f16-4df2-bade-f35d51c78798]" id="aad6e640-4f16-4df2-bade-f35d51c78798_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="aad6e640-4f16-4df2-bade-f35d51c78798_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#aad6e640-4f16-4df2-bade-f35d51c78798_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aad6e640-4f16-4df2-bade-f35d51c78798]" id="aad6e640-4f16-4df2-bade-f35d51c78798_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="aad6e640-4f16-4df2-bade-f35d51c78798_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#aad6e640-4f16-4df2-bade-f35d51c78798_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aad6e640-4f16-4df2-bade-f35d51c78798]" id="aad6e640-4f16-4df2-bade-f35d51c78798_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="aad6e640-4f16-4df2-bade-f35d51c78798_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#aad6e640-4f16-4df2-bade-f35d51c78798_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aad6e640-4f16-4df2-bade-f35d51c78798]" id="aad6e640-4f16-4df2-bade-f35d51c78798_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="aad6e640-4f16-4df2-bade-f35d51c78798_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#aad6e640-4f16-4df2-bade-f35d51c78798_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[aad6e640-4f16-4df2-bade-f35d51c78798]" id="aad6e640-4f16-4df2-bade-f35d51c78798_na" value="na">
+<label class="custom-control-label" for="aad6e640-4f16-4df2-bade-f35d51c78798_na"></label>
+<div class="custom-control-text" onclick="$('#aad6e640-4f16-4df2-bade-f35d51c78798_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="3e28105e-809a-46e1-9a85-d961df0ee58a">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Follows safe lab practices and Standard Operating Procedures (SOPs).</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3e28105e-809a-46e1-9a85-d961df0ee58a]" id="3e28105e-809a-46e1-9a85-d961df0ee58a_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="3e28105e-809a-46e1-9a85-d961df0ee58a_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#3e28105e-809a-46e1-9a85-d961df0ee58a_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3e28105e-809a-46e1-9a85-d961df0ee58a]" id="3e28105e-809a-46e1-9a85-d961df0ee58a_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="3e28105e-809a-46e1-9a85-d961df0ee58a_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#3e28105e-809a-46e1-9a85-d961df0ee58a_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3e28105e-809a-46e1-9a85-d961df0ee58a]" id="3e28105e-809a-46e1-9a85-d961df0ee58a_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="3e28105e-809a-46e1-9a85-d961df0ee58a_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#3e28105e-809a-46e1-9a85-d961df0ee58a_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+ <div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3e28105e-809a-46e1-9a85-d961df0ee58a]" id="3e28105e-809a-46e1-9a85-d961df0ee58a_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="3e28105e-809a-46e1-9a85-d961df0ee58a_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#3e28105e-809a-46e1-9a85-d961df0ee58a_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3e28105e-809a-46e1-9a85-d961df0ee58a]" id="3e28105e-809a-46e1-9a85-d961df0ee58a_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="3e28105e-809a-46e1-9a85-d961df0ee58a_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#3e28105e-809a-46e1-9a85-d961df0ee58a_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3e28105e-809a-46e1-9a85-d961df0ee58a]" id="3e28105e-809a-46e1-9a85-d961df0ee58a_na" value="na">
+<label class="custom-control-label" for="3e28105e-809a-46e1-9a85-d961df0ee58a_na"></label>
+<div class="custom-control-text" onclick="$('#3e28105e-809a-46e1-9a85-d961df0ee58a_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Follows best practices in accurate recordkeeping, data security, access, and ownership.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7]" id="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7]" id="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7]" id="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+  <label class="custom-control-label" for="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7]" id="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7]" id="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7]" id="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_na" value="na">
+ <label class="custom-control-label" for="9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_na"></label>
+<div class="custom-control-text" onclick="$('#9e4ffa6e-bc7f-4288-935f-2397e8ecf8a7_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab5" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Collaboration and Team Science
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">Unable to Rate</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="0bb6596a-857a-45cd-ab34-26ee1346e871">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Shares research from own area of expertise in language meaningful to an interdisciplinary team/a broad audience.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0bb6596a-857a-45cd-ab34-26ee1346e871]" id="0bb6596a-857a-45cd-ab34-26ee1346e871_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="0bb6596a-857a-45cd-ab34-26ee1346e871_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#0bb6596a-857a-45cd-ab34-26ee1346e871_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0bb6596a-857a-45cd-ab34-26ee1346e871]" id="0bb6596a-857a-45cd-ab34-26ee1346e871_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="0bb6596a-857a-45cd-ab34-26ee1346e871_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#0bb6596a-857a-45cd-ab34-26ee1346e871_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0bb6596a-857a-45cd-ab34-26ee1346e871]" id="0bb6596a-857a-45cd-ab34-26ee1346e871_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="0bb6596a-857a-45cd-ab34-26ee1346e871_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#0bb6596a-857a-45cd-ab34-26ee1346e871_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0bb6596a-857a-45cd-ab34-26ee1346e871]" id="0bb6596a-857a-45cd-ab34-26ee1346e871_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="0bb6596a-857a-45cd-ab34-26ee1346e871_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#0bb6596a-857a-45cd-ab34-26ee1346e871_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0bb6596a-857a-45cd-ab34-26ee1346e871]" id="0bb6596a-857a-45cd-ab34-26ee1346e871_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="0bb6596a-857a-45cd-ab34-26ee1346e871_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#0bb6596a-857a-45cd-ab34-26ee1346e871_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0bb6596a-857a-45cd-ab34-26ee1346e871]" id="0bb6596a-857a-45cd-ab34-26ee1346e871_na" value="na">
+<label class="custom-control-label" for="0bb6596a-857a-45cd-ab34-26ee1346e871_na"></label>
+<div class="custom-control-text" onclick="$('#0bb6596a-857a-45cd-ab34-26ee1346e871_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="20326284-a4f0-4e48-b317-827273d7dbbf">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Develops interdisciplinary research frameworks in collaboration with scholars from other disciplines.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[20326284-a4f0-4e48-b317-827273d7dbbf]" id="20326284-a4f0-4e48-b317-827273d7dbbf_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="20326284-a4f0-4e48-b317-827273d7dbbf_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#20326284-a4f0-4e48-b317-827273d7dbbf_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[20326284-a4f0-4e48-b317-827273d7dbbf]" id="20326284-a4f0-4e48-b317-827273d7dbbf_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="20326284-a4f0-4e48-b317-827273d7dbbf_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#20326284-a4f0-4e48-b317-827273d7dbbf_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[20326284-a4f0-4e48-b317-827273d7dbbf]" id="20326284-a4f0-4e48-b317-827273d7dbbf_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="20326284-a4f0-4e48-b317-827273d7dbbf_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#20326284-a4f0-4e48-b317-827273d7dbbf_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[20326284-a4f0-4e48-b317-827273d7dbbf]" id="20326284-a4f0-4e48-b317-827273d7dbbf_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="20326284-a4f0-4e48-b317-827273d7dbbf_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#20326284-a4f0-4e48-b317-827273d7dbbf_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[20326284-a4f0-4e48-b317-827273d7dbbf]" id="20326284-a4f0-4e48-b317-827273d7dbbf_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="20326284-a4f0-4e48-b317-827273d7dbbf_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#20326284-a4f0-4e48-b317-827273d7dbbf_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[20326284-a4f0-4e48-b317-827273d7dbbf]" id="20326284-a4f0-4e48-b317-827273d7dbbf_na" value="na">
+<label class="custom-control-label" for="20326284-a4f0-4e48-b317-827273d7dbbf_na"></label>
+<div class="custom-control-text" onclick="$('#20326284-a4f0-4e48-b317-827273d7dbbf_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="edb32364-c988-4cc6-a55c-ecf1b27a1a49">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Builds trust within the lab and among collaborators.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[edb32364-c988-4cc6-a55c-ecf1b27a1a49]" id="edb32364-c988-4cc6-a55c-ecf1b27a1a49_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="edb32364-c988-4cc6-a55c-ecf1b27a1a49_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#edb32364-c988-4cc6-a55c-ecf1b27a1a49_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[edb32364-c988-4cc6-a55c-ecf1b27a1a49]" id="edb32364-c988-4cc6-a55c-ecf1b27a1a49_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="edb32364-c988-4cc6-a55c-ecf1b27a1a49_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#edb32364-c988-4cc6-a55c-ecf1b27a1a49_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[edb32364-c988-4cc6-a55c-ecf1b27a1a49]" id="edb32364-c988-4cc6-a55c-ecf1b27a1a49_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="edb32364-c988-4cc6-a55c-ecf1b27a1a49_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#edb32364-c988-4cc6-a55c-ecf1b27a1a49_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[edb32364-c988-4cc6-a55c-ecf1b27a1a49]" id="edb32364-c988-4cc6-a55c-ecf1b27a1a49_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="edb32364-c988-4cc6-a55c-ecf1b27a1a49_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#edb32364-c988-4cc6-a55c-ecf1b27a1a49_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[edb32364-c988-4cc6-a55c-ecf1b27a1a49]" id="edb32364-c988-4cc6-a55c-ecf1b27a1a49_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="edb32364-c988-4cc6-a55c-ecf1b27a1a49_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#edb32364-c988-4cc6-a55c-ecf1b27a1a49_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[edb32364-c988-4cc6-a55c-ecf1b27a1a49]" id="edb32364-c988-4cc6-a55c-ecf1b27a1a49_na" value="na">
+<label class="custom-control-label" for="edb32364-c988-4cc6-a55c-ecf1b27a1a49_na"></label>
+<div class="custom-control-text" onclick="$('#edb32364-c988-4cc6-a55c-ecf1b27a1a49_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab6" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+RCR &amp; Research Ethics and R&amp;R
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">Unable to Rate</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="26090b64-0e51-42fa-9498-f8e28581b257">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Recognizes and follows ethical research practices.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[26090b64-0e51-42fa-9498-f8e28581b257]" id="26090b64-0e51-42fa-9498-f8e28581b257_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="26090b64-0e51-42fa-9498-f8e28581b257_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#26090b64-0e51-42fa-9498-f8e28581b257_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[26090b64-0e51-42fa-9498-f8e28581b257]" id="26090b64-0e51-42fa-9498-f8e28581b257_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="26090b64-0e51-42fa-9498-f8e28581b257_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#26090b64-0e51-42fa-9498-f8e28581b257_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[26090b64-0e51-42fa-9498-f8e28581b257]" id="26090b64-0e51-42fa-9498-f8e28581b257_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="26090b64-0e51-42fa-9498-f8e28581b257_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#26090b64-0e51-42fa-9498-f8e28581b257_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[26090b64-0e51-42fa-9498-f8e28581b257]" id="26090b64-0e51-42fa-9498-f8e28581b257_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="26090b64-0e51-42fa-9498-f8e28581b257_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#26090b64-0e51-42fa-9498-f8e28581b257_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[26090b64-0e51-42fa-9498-f8e28581b257]" id="26090b64-0e51-42fa-9498-f8e28581b257_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="26090b64-0e51-42fa-9498-f8e28581b257_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#26090b64-0e51-42fa-9498-f8e28581b257_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[26090b64-0e51-42fa-9498-f8e28581b257]" id="26090b64-0e51-42fa-9498-f8e28581b257_na" value="na">
+<label class="custom-control-label" for="26090b64-0e51-42fa-9498-f8e28581b257_na"></label>
+<div class="custom-control-text" onclick="$('#26090b64-0e51-42fa-9498-f8e28581b257_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Uses appropriate statistical tests to verify data integrity.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b6cb5267-1f28-4ef0-a96a-36e8d0953aa3]" id="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b6cb5267-1f28-4ef0-a96a-36e8d0953aa3]" id="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+ <input class="custom-control-input" type="radio" name="response[b6cb5267-1f28-4ef0-a96a-36e8d0953aa3]" id="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b6cb5267-1f28-4ef0-a96a-36e8d0953aa3]" id="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b6cb5267-1f28-4ef0-a96a-36e8d0953aa3]" id="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[b6cb5267-1f28-4ef0-a96a-36e8d0953aa3]" id="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_na" value="na">
+<label class="custom-control-label" for="b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_na"></label>
+<div class="custom-control-text" onclick="$('#b6cb5267-1f28-4ef0-a96a-36e8d0953aa3_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab7" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Leadership Skills
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">Unable to Rate</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="d58d39f6-6b67-4371-b652-fedd904a4c0c">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Prioritizes &amp; coordinates own tasks, integrates contributions into the research independently.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d58d39f6-6b67-4371-b652-fedd904a4c0c]" id="d58d39f6-6b67-4371-b652-fedd904a4c0c_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="d58d39f6-6b67-4371-b652-fedd904a4c0c_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#d58d39f6-6b67-4371-b652-fedd904a4c0c_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d58d39f6-6b67-4371-b652-fedd904a4c0c]" id="d58d39f6-6b67-4371-b652-fedd904a4c0c_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="d58d39f6-6b67-4371-b652-fedd904a4c0c_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#d58d39f6-6b67-4371-b652-fedd904a4c0c_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d58d39f6-6b67-4371-b652-fedd904a4c0c]" id="d58d39f6-6b67-4371-b652-fedd904a4c0c_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="d58d39f6-6b67-4371-b652-fedd904a4c0c_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#d58d39f6-6b67-4371-b652-fedd904a4c0c_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d58d39f6-6b67-4371-b652-fedd904a4c0c]" id="d58d39f6-6b67-4371-b652-fedd904a4c0c_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="d58d39f6-6b67-4371-b652-fedd904a4c0c_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#d58d39f6-6b67-4371-b652-fedd904a4c0c_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d58d39f6-6b67-4371-b652-fedd904a4c0c]" id="d58d39f6-6b67-4371-b652-fedd904a4c0c_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="d58d39f6-6b67-4371-b652-fedd904a4c0c_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#d58d39f6-6b67-4371-b652-fedd904a4c0c_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d58d39f6-6b67-4371-b652-fedd904a4c0c]" id="d58d39f6-6b67-4371-b652-fedd904a4c0c_na" value="na">
+<label class="custom-control-label" for="d58d39f6-6b67-4371-b652-fedd904a4c0c_na"></label>
+<div class="custom-control-text" onclick="$('#d58d39f6-6b67-4371-b652-fedd904a4c0c_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="ba993845-71b3-43fb-a0b9-2fc91e7202c0">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Offers insightful or creative solutions and provides a framework for evaluating alternatives.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ba993845-71b3-43fb-a0b9-2fc91e7202c0]" id="ba993845-71b3-43fb-a0b9-2fc91e7202c0_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="ba993845-71b3-43fb-a0b9-2fc91e7202c0_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#ba993845-71b3-43fb-a0b9-2fc91e7202c0_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ba993845-71b3-43fb-a0b9-2fc91e7202c0]" id="ba993845-71b3-43fb-a0b9-2fc91e7202c0_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="ba993845-71b3-43fb-a0b9-2fc91e7202c0_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#ba993845-71b3-43fb-a0b9-2fc91e7202c0_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ba993845-71b3-43fb-a0b9-2fc91e7202c0]" id="ba993845-71b3-43fb-a0b9-2fc91e7202c0_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="ba993845-71b3-43fb-a0b9-2fc91e7202c0_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#ba993845-71b3-43fb-a0b9-2fc91e7202c0_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ba993845-71b3-43fb-a0b9-2fc91e7202c0]" id="ba993845-71b3-43fb-a0b9-2fc91e7202c0_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="ba993845-71b3-43fb-a0b9-2fc91e7202c0_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#ba993845-71b3-43fb-a0b9-2fc91e7202c0_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ba993845-71b3-43fb-a0b9-2fc91e7202c0]" id="ba993845-71b3-43fb-a0b9-2fc91e7202c0_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="ba993845-71b3-43fb-a0b9-2fc91e7202c0_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#ba993845-71b3-43fb-a0b9-2fc91e7202c0_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[ba993845-71b3-43fb-a0b9-2fc91e7202c0]" id="ba993845-71b3-43fb-a0b9-2fc91e7202c0_na" value="na">
+<label class="custom-control-label" for="ba993845-71b3-43fb-a0b9-2fc91e7202c0_na"></label>
+<div class="custom-control-text" onclick="$('#ba993845-71b3-43fb-a0b9-2fc91e7202c0_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="9b2a49cd-8f2f-4848-8d17-7d488a68cb51">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Participates in conflict resolution and promotes a collegial research environment.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9b2a49cd-8f2f-4848-8d17-7d488a68cb51]" id="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#9b2a49cd-8f2f-4848-8d17-7d488a68cb51_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9b2a49cd-8f2f-4848-8d17-7d488a68cb51]" id="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#9b2a49cd-8f2f-4848-8d17-7d488a68cb51_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9b2a49cd-8f2f-4848-8d17-7d488a68cb51]" id="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#9b2a49cd-8f2f-4848-8d17-7d488a68cb51_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9b2a49cd-8f2f-4848-8d17-7d488a68cb51]" id="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#9b2a49cd-8f2f-4848-8d17-7d488a68cb51_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9b2a49cd-8f2f-4848-8d17-7d488a68cb51]" id="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#9b2a49cd-8f2f-4848-8d17-7d488a68cb51_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[9b2a49cd-8f2f-4848-8d17-7d488a68cb51]" id="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_na" value="na">
+<label class="custom-control-label" for="9b2a49cd-8f2f-4848-8d17-7d488a68cb51_na"></label>
+<div class="custom-control-text" onclick="$('#9b2a49cd-8f2f-4848-8d17-7d488a68cb51_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab8" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Resilience and Survival Skills
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+<th scope="col">Unable to Rate</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="3a53e6b4-e19f-4406-a9b7-917de1eb2944">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Self-driven for planning and direction.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3a53e6b4-e19f-4406-a9b7-917de1eb2944]" id="3a53e6b4-e19f-4406-a9b7-917de1eb2944_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="3a53e6b4-e19f-4406-a9b7-917de1eb2944_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#3a53e6b4-e19f-4406-a9b7-917de1eb2944_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3a53e6b4-e19f-4406-a9b7-917de1eb2944]" id="3a53e6b4-e19f-4406-a9b7-917de1eb2944_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="3a53e6b4-e19f-4406-a9b7-917de1eb2944_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#3a53e6b4-e19f-4406-a9b7-917de1eb2944_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3a53e6b4-e19f-4406-a9b7-917de1eb2944]" id="3a53e6b4-e19f-4406-a9b7-917de1eb2944_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="3a53e6b4-e19f-4406-a9b7-917de1eb2944_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#3a53e6b4-e19f-4406-a9b7-917de1eb2944_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3a53e6b4-e19f-4406-a9b7-917de1eb2944]" id="3a53e6b4-e19f-4406-a9b7-917de1eb2944_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="3a53e6b4-e19f-4406-a9b7-917de1eb2944_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#3a53e6b4-e19f-4406-a9b7-917de1eb2944_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3a53e6b4-e19f-4406-a9b7-917de1eb2944]" id="3a53e6b4-e19f-4406-a9b7-917de1eb2944_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="3a53e6b4-e19f-4406-a9b7-917de1eb2944_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#3a53e6b4-e19f-4406-a9b7-917de1eb2944_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[3a53e6b4-e19f-4406-a9b7-917de1eb2944]" id="3a53e6b4-e19f-4406-a9b7-917de1eb2944_na" value="na">
+<label class="custom-control-label" for="3a53e6b4-e19f-4406-a9b7-917de1eb2944_na"></label>
+<div class="custom-control-text" onclick="$('#3a53e6b4-e19f-4406-a9b7-917de1eb2944_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="4e2575cf-a58e-4496-8411-1bd59166ba29">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Attends required and elective scientific functions of value to the research training.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[4e2575cf-a58e-4496-8411-1bd59166ba29]" id="4e2575cf-a58e-4496-8411-1bd59166ba29_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="4e2575cf-a58e-4496-8411-1bd59166ba29_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#4e2575cf-a58e-4496-8411-1bd59166ba29_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[4e2575cf-a58e-4496-8411-1bd59166ba29]" id="4e2575cf-a58e-4496-8411-1bd59166ba29_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="4e2575cf-a58e-4496-8411-1bd59166ba29_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#4e2575cf-a58e-4496-8411-1bd59166ba29_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[4e2575cf-a58e-4496-8411-1bd59166ba29]" id="4e2575cf-a58e-4496-8411-1bd59166ba29_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="4e2575cf-a58e-4496-8411-1bd59166ba29_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#4e2575cf-a58e-4496-8411-1bd59166ba29_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[4e2575cf-a58e-4496-8411-1bd59166ba29]" id="4e2575cf-a58e-4496-8411-1bd59166ba29_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="4e2575cf-a58e-4496-8411-1bd59166ba29_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#4e2575cf-a58e-4496-8411-1bd59166ba29_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[4e2575cf-a58e-4496-8411-1bd59166ba29]" id="4e2575cf-a58e-4496-8411-1bd59166ba29_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="4e2575cf-a58e-4496-8411-1bd59166ba29_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#4e2575cf-a58e-4496-8411-1bd59166ba29_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[4e2575cf-a58e-4496-8411-1bd59166ba29]" id="4e2575cf-a58e-4496-8411-1bd59166ba29_na" value="na">
+<label class="custom-control-label" for="4e2575cf-a58e-4496-8411-1bd59166ba29_na"></label>
+<div class="custom-control-text" onclick="$('#4e2575cf-a58e-4496-8411-1bd59166ba29_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="7dcf4b18-8356-454a-a9de-4677e8e5b263">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Displays passion for science, and shares excitement for science with others.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7dcf4b18-8356-454a-a9de-4677e8e5b263]" id="7dcf4b18-8356-454a-a9de-4677e8e5b263_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="7dcf4b18-8356-454a-a9de-4677e8e5b263_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#7dcf4b18-8356-454a-a9de-4677e8e5b263_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7dcf4b18-8356-454a-a9de-4677e8e5b263]" id="7dcf4b18-8356-454a-a9de-4677e8e5b263_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="7dcf4b18-8356-454a-a9de-4677e8e5b263_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#7dcf4b18-8356-454a-a9de-4677e8e5b263_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7dcf4b18-8356-454a-a9de-4677e8e5b263]" id="7dcf4b18-8356-454a-a9de-4677e8e5b263_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="7dcf4b18-8356-454a-a9de-4677e8e5b263_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#7dcf4b18-8356-454a-a9de-4677e8e5b263_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7dcf4b18-8356-454a-a9de-4677e8e5b263]" id="7dcf4b18-8356-454a-a9de-4677e8e5b263_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="7dcf4b18-8356-454a-a9de-4677e8e5b263_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#7dcf4b18-8356-454a-a9de-4677e8e5b263_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7dcf4b18-8356-454a-a9de-4677e8e5b263]" id="7dcf4b18-8356-454a-a9de-4677e8e5b263_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="7dcf4b18-8356-454a-a9de-4677e8e5b263_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#7dcf4b18-8356-454a-a9de-4677e8e5b263_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7dcf4b18-8356-454a-a9de-4677e8e5b263]" id="7dcf4b18-8356-454a-a9de-4677e8e5b263_na" value="na">
+<label class="custom-control-label" for="7dcf4b18-8356-454a-a9de-4677e8e5b263_na"></label>
+<div class="custom-control-text" onclick="$('#7dcf4b18-8356-454a-a9de-4677e8e5b263_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="7f17fd6d-261b-42c0-921e-c84b3f144b3e">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Demonstrates persistence and resilience.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7f17fd6d-261b-42c0-921e-c84b3f144b3e]" id="7f17fd6d-261b-42c0-921e-c84b3f144b3e_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="7f17fd6d-261b-42c0-921e-c84b3f144b3e_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#7f17fd6d-261b-42c0-921e-c84b3f144b3e_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7f17fd6d-261b-42c0-921e-c84b3f144b3e]" id="7f17fd6d-261b-42c0-921e-c84b3f144b3e_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="7f17fd6d-261b-42c0-921e-c84b3f144b3e_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#7f17fd6d-261b-42c0-921e-c84b3f144b3e_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7f17fd6d-261b-42c0-921e-c84b3f144b3e]" id="7f17fd6d-261b-42c0-921e-c84b3f144b3e_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="7f17fd6d-261b-42c0-921e-c84b3f144b3e_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#7f17fd6d-261b-42c0-921e-c84b3f144b3e_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7f17fd6d-261b-42c0-921e-c84b3f144b3e]" id="7f17fd6d-261b-42c0-921e-c84b3f144b3e_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="7f17fd6d-261b-42c0-921e-c84b3f144b3e_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#7f17fd6d-261b-42c0-921e-c84b3f144b3e_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7f17fd6d-261b-42c0-921e-c84b3f144b3e]" id="7f17fd6d-261b-42c0-921e-c84b3f144b3e_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="7f17fd6d-261b-42c0-921e-c84b3f144b3e_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#7f17fd6d-261b-42c0-921e-c84b3f144b3e_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[7f17fd6d-261b-42c0-921e-c84b3f144b3e]" id="7f17fd6d-261b-42c0-921e-c84b3f144b3e_na" value="na">
+<label class="custom-control-label" for="7f17fd6d-261b-42c0-921e-c84b3f144b3e_na"></label>
+<div class="custom-control-text" onclick="$('#7f17fd6d-261b-42c0-921e-c84b3f144b3e_na').prop('checked', true);"></div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="comment-sign-confirm" style="display: none;">
+<div class="card mt-4 mb-4">
+<div class="card-header bg-light">
+<div class="media align-items-center">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#comments"></use>
+</svg>
+</div>
+<div class="media-body ml-2">
+<h5 class="mb-0 fs-0">Comments for Student</h5>
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+<textarea rows="4" name="memo" cols="50" placeholder="Type Comments Here" class="form-control border-0 rounded-0"></textarea>
+</div>
+</div>
+<button type="button" class="button button-blue" onclick="saveDraft()">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#pencil-ruler"></use>
+</svg>
+</div>
+Save Draft
+</button>
+<button type="button" class="button button-primary" onclick="formSubmit()">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#save"></use>
+</svg>
+</div> Submit
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.btnNext').click(function() {
+            $('.nav-tabs .active').parent().next('li').find('a').trigger('click');
+        });
+
+        $('.btnPrevious').click(function() {
+            $('.nav-tabs .active').parent().prev('li').find('a').trigger('click');
+        });
+    });
+</script>
+<script type="text/javascript">
+    function formSubmit() {
+        form_status = false;
+
+        $("input:radio").each(function() {
+            if ($('input:radio:checked').length !== $("input:hidden[name=question\\[\\]]").length) {
+                form_status = false;
+            } else {
+                form_status = true;
+            }
+        });
+
+        showToastMessage("This is just a mockup", "now", "This is just a mockup.", "warning");
+    }
+
+    function saveDraft() {
+        showToastMessage("This is just a mockup", "now", "This is just a mockup.", "warning");
+    }
+
+    $(document).ready(function() {
+        if ($('input:radio:checked').length === $("input:hidden[name=question\\[\\]]").length) {
+            $( "#comment-sign-confirm" ).show();
+            $( "#evaluation-form-notice" ).hide();
+        }
+
+        $('input[type=radio]').change(function() {
+            if ($('input:radio:checked').length === $("input:hidden[name=question\\[\\]]").length) {
+                $( "#comment-sign-confirm" ).show();
+                $( "#evaluation-form-notice" ).hide();
+            }
+        });
+
+        autosize($('textarea'));
+    });
+</script>
+</div>
+</div>
+</div>
+</main>
+<script type="text/javascript">
+    $(document).on('click','.navbar-collapse.show',function(e) {
+        if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+            $(this).collapse('hide');
+            $('body').scrollTop(0);
+        }
+    });
+    var $buoop = {required:{e:-1,f:-1,o:-1,s:-1,c:-1},insecure:true,unsupported:true,api:2020.02,text: "Your browser is <b><font color='red'><u>NOT</u></font> supported</b>. <a class='btn btn-success' href='https://browser-update.org/update-browser.html' target='_blank'>Update Your Browser</a>"};
+    function $buo_f(){
+        var e = document.createElement("script");
+        e.src = "https://browser-update.org/update.min.js";
+        document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+</script>
+</body>
+</html>
