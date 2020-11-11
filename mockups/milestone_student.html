@@ -1,0 +1,739 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Milestone</title>
+<meta charset="utf-8">
+<meta name="description" content="Duke T3">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Duke T3">
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-192x192.png">
+<link rel="apple-touch-icon" sizes="167x167" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-192x192.png">
+<link rel="manifest" href="https://obge.lollel.com/manifest.json">
+<link href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.03.08.21/images/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@master/css/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.09.11.15/js/script.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css" integrity="sha256-bDcYpq5PLrWdVEWBIoJVgzkhWK2GZPhYBmECca0x85I=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.min.js" integrity="sha256-XM3WFGub3gsB764gNg+3Qosv9Cq6NE2O/mQ7AxwNt6o=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+<style type="text/css">
+        body {
+            font-size: 1.1em;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .table th, .table td, .table thead th {
+            vertical-align: middle;
+        }
+        .tools {
+            font-size: 1.25rem;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+<div id="loading" class="loading">
+<h1>
+<div class="icon baseline">
+<svg aria-hidden="true" class="icon-spin">
+<use xlink:href="icons.svg#spinner-third"></use>
+</svg>
+</div>
+</h1>
+</div>
+<main class="inner-body">
+<div class="layout layout-nav-side">
+<div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top spf-link">
+<a class="navbar-brand" href="/dashboard">
+<img alt="Duke T3" src="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.09.26.16/images/logos/logo.svg" width="50" />&nbsp;<strong>&nbsp;&nbsp;T3<sup><sup><i>beta</i></sup></sup></strong>
+</a>
+<div class="d-flex align-items-center">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<span style="font-size:1.25rem">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#bars"></use>
+</svg>
+</div>
+</span>
+</button>
+<div class="d-block d-lg-none ml-2">
+<div class="dropdown">
+<a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img alt="Image" src="https://www.gravatar.com/avatar/0b433891e2ac6ebc0275e18d73b38712.jpg?d=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fvidareus%2Frsrc%2Fimages%2Fdh_horz_cmyk.png&amp;r=g&amp;s=80" class="avatar" />
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="/people/my" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#user"></use>
+</svg>
+</div>
+Profile
+</a>
+<a href="/accounts/logout" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#sign-out-alt"></use>
+</svg>
+</div>
+Logout
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse navbar-collapse flex-column" id="navbar-collapse">
+<ul class="navbar-nav d-lg-block">
+<li class="nav-item">
+<a class="nav-link" href="/dashboard">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#chalkboard"></use>
+</svg>
+</div>
+Dashboard
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/milestones">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#tasks-alt"></use>
+</svg>
+</div>
+Milestones
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/frs">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#telescope"></use>
+</svg>
+</div>
+Faculty Research Series
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/resources">
+<div class="icon baseline">
+ <svg aria-hidden="true">
+<use xlink:href="icons.svg#radar"></use>
+</svg>
+</div>
+Resource Library
+</a>
+</li>
+</ul>
+</div>
+<div class="d-none d-lg-block">
+<div class="dropup">
+<a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img alt="avatar" src="https://www.gravatar.com/avatar/0b433891e2ac6ebc0275e18d73b38712.jpg?d=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fvidareus%2Frsrc%2Fimages%2Fdh_horz_cmyk.png&amp;r=g&amp;s=80" class="avatar" /> <span style="color:whitesmoke;font-weight:bold">Student</span>
+</a>
+<div class="dropdown-menu">
+<a href="/people/my" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#user"></use>
+</svg>
+</div>
+Profile
+</a>
+<a href="/accounts/logout" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#sign-out-alt"></use>
+</svg>
+</div>
+Logout
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="main-container" class="main-container">
+<div id="content" class="container">
+<script type="text/javascript">
+    $(window).on('hashchange', function() {
+        if (matches = window.location.href.match('#NotAvailable')) {
+            $('.modal').modal('show');
+            window.location.hash = "";
+        }
+    });
+</script>
+<div class="row justify-content-center">
+<div class="col-lg-11 col-xl-10">
+<div class="page-header">
+<h1>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#tasks-alt"></use>
+</svg>
+</div>
+Your Milestones
+</h1>
+</div>
+<style type="text/css">
+                .project .row {
+                    margin: 0;
+                    padding: 15px 0;
+                    margin-bottom: 15px
+                }
+
+                .project div[class*='col-'] {
+                    border-right: 1px solid #eee
+                }
+
+                .project .text h3 {
+                    margin-bottom: 0;
+                    color: #555
+                }
+
+                .project .text small {
+                    color: #aaa;
+                    font-size: 0.75em
+                }
+
+                .project .project-date span {
+                    font-size: 0.9em;
+                    color: #999
+                }
+
+                .project .image {
+                    max-width: 50px;
+                    min-width: 50px;
+                    height: 50px;
+                    margin-right: 15px
+                }
+
+                .project .time,
+                .project .comments,
+                .project .project-progress {
+                    color: #999;
+                    font-size: 0.9em;
+                    margin-right: 20px
+                }
+
+                .project .time i,
+                .project .comments i,
+                .project .project-progress i {
+                    margin-right: 5px
+                }
+
+                .project .project-progress {
+                    width: 200px
+                }
+
+                .project .project-progress .progress {
+                    height: 4px
+                }
+
+                .project .card {
+                    margin-bottom: 0
+                }
+
+                @media (max-width: 991px) {
+                    .project .right-col {
+                        margin-top: 20px;
+                        margin-left: 65px
+                    }
+                    .project .project-progress {
+                        width: 150px
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .project .project-progress {
+                        display: none
+                    }
+                }
+                .has-shadow {
+                    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px 0 2px rgba(0,0,0,0.05);
+                    box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px 0 2px rgba(0,0,0,0.05);
+                }
+                .bg-white {
+                    background: #fff !important;
+                }
+
+                .bg-red {
+                    background: #ff7676 !important;
+                    color: #fff
+                }
+
+                .bg-red:hover {
+                    color: #fff
+                }
+
+                .bg-blue {
+                    background: #85b4f2 !important;
+                    color: #fff
+                }
+
+                .bg-blue:hover {
+                    color: #fff
+                }
+
+                .bg-yellow {
+                    background: #eef157 !important;
+                    color: #fff
+                }
+
+                .bg-yellow:hover {
+                    color: #fff
+                }
+
+                .bg-green {
+                    background: #54e69d !important;
+                    color: #fff
+                }
+
+                .bg-green:hover {
+                    color: #fff
+                }
+
+                .bg-orange {
+                    background: #ffc36d !important;
+                    color: #fff
+                }
+
+                .bg-orange:hover {
+                    color: #fff
+                }
+
+                .bg-violet {
+                    background: #796AEE !important;
+                    color: #fff
+                }
+
+                .bg-violet:hover {
+                    color: #fff
+                }
+
+                .bg-gray {
+                    background: #ced4da !important
+                }
+            </style>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="tasks" role="tabpanel" data-filter-list="card-list-body">
+<div class="content-list-body">
+<div class="card-list">
+<div class="card-list-head">
+<h6>Lab Rotations</h6>
+</div>
+<div class="card-list-body">
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-light" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-light">
+<div class="card-title">
+<a href="/milestones/view/421434f10010" class="spf-link">
+<h6 data-filter-by="text">Lab Rotation Registration</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-list-body">
+<div class="card-list">
+<div class="card-list-head">
+<h6>Preliminary Examination</h6>
+</div>
+<div class="card-list-body">
+<a href="/task/view/cd4be98b-7c393a" class="spf-link">
+<div class="project">
+<div class="row bg-light has-shadow">
+<div class="left-col col-lg-9 d-flex align-items-center justify-content-between">
+<div class="project-title d-flex align-items-center">
+<div class="text">
+<h3 class="h4">
+Preliminary Examination
+</h3>
+<small>
+</small>
+</div>
+</div>
+<div class="project-date">
+<span class="hidden-sm-down">
+Mon, Dec 02, 2019 03:00 PM EST<br>
+Mon, Dec 02, 2019 05:00 PM EST
+</span>
+</div>
+</div>
+<div class="right-col col-lg-3 d-flex align-items-center">
+<div class="project-progress">
+<h3><span class="badge badge-success">Completed</span></h3>
+</div>
+</div>
+</div>
+</div>
+</a>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-success">
+<div class="card-title">
+<a href="/milestones/view/46e9b1054080" class="spf-link">
+<h6 data-filter-by="text">Enter Approved Preliminary Exam Committee</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-success">
+<div class="card-title">
+<a href="/milestones/view/4981cb211c" class="spf-link">
+<h6 data-filter-by="text">Schedule Preliminary Exam</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-success">
+<div class="card-title">
+<a href="/milestones/view/47b485f" class="spf-link">
+<h6 data-filter-by="text">Upload Preliminary Exam Documents</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-success">
+<div class="card-title">
+ <a href="/milestones/view/47d0ac64f0d7a" class="spf-link">
+<h6 data-filter-by="text">Preliminary Exam Event</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-list-body">
+<div class="card-list">
+<div class="card-list-head">
+<h6>Annual Committee Meeting</h6>
+</div>
+<div class="card-list-body">
+<a href="/task/view/ccbfa52cef6e" class="spf-link">
+<div class="project">
+<div class="row bg-light has-shadow">
+<div class="left-col col-lg-9 d-flex align-items-center justify-content-between">
+<div class="project-title d-flex align-items-center">
+<div class="text">
+<h3 class="h4">
+Annual Committee Meeting
+</h3>
+<small>
+</small>
+</div>
+</div>
+<div class="project-date">
+<span class="hidden-sm-down">
+Wed, Dec 02, 2020 01:00 PM EST<br>
+Wed, Dec 02, 2020 02:30 PM EST
+</span>
+</div>
+</div>
+<div class="right-col col-lg-3 d-flex align-items-center">
+<div class="project-progress">
+<h3><span class="badge badge-secondary">In Progress</span></h3>
+</div>
+</div>
+</div>
+</div>
+</a>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-success">
+<div class="card-title">
+<a href="/milestones/view/8e50a910261c3" class="spf-link">
+<h6 data-filter-by="text">Enter Approved Dissertation Committee</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-success">
+<div class="card-title">
+<a href="/milestones/view/82bd7da26d7c068" class="spf-link">
+<h6 data-filter-by="text">Schedule Committee Meeting</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+ </div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-warning">
+<div class="card-title">
+<a href="/milestones/view/91f072db5" class="spf-link">
+<h6 data-filter-by="text">Upload Committee Meeting Document</h6>
+</a>
+ <span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-primary">
+<div class="card-title">
+<a href="/milestones/view/4663d3bd1" class="spf-link">
+<h6 data-filter-by="text">Annual Committee Meeting</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-list-body">
+<div class="card-list">
+<div class="card-list-head">
+<h6>Dissertation Defense</h6>
+</div>
+<div class="card-list-body">
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-light" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-light">
+<div class="card-title">
+<a href="/milestones/view/403284583f" class="spf-link">
+<h6 data-filter-by="text">Initiate Defense by Advisor Letter</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-light" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-light">
+<div class="card-title">
+<a href="/milestones/view/5916e0c1e8" class="spf-link">
+<h6 data-filter-by="text">Enter Approved Dissertation Committee</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-light" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-light">
+<div class="card-title">
+<a href="/milestones/view/bc6a5ccaddf" class="spf-link">
+<h6 data-filter-by="text">Schedule Dissertation Defense &amp; Enter Dissertation Title</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-light" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-light">
+<div class="card-title">
+<a href="/milestones/view/39591341d3" class="spf-link">
+<h6 data-filter-by="text">Graduate School Approval</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-light" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-light">
+<div class="card-title">
+<a href="/milestones/view/672f9b1ca2f0" class="spf-link">
+<h6 data-filter-by="text">Upload Dissertation Defense Documents</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+ <div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-task">
+<div class="progress">
+<div class="progress-bar bg-light" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="card-body alert-light">
+<div class="card-title">
+<a href="/milestones/view/847ff2a660be" class="spf-link">
+<h6 data-filter-by="text">Dissertation Defense Event</h6>
+</a>
+<span class="text-small"></span>
+</div>
+<div class="card-meta">
+<div class="d-flex align-items-center">
+<i class="fas fa-tasks"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Notice</h5>
+<button href="#closed" type="button" class="close btn btn-round" data-dismiss="modal" aria-label="Close">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#times"></use>
+</svg>
+</div>
+</button>
+</div>
+<div class="modal-body">
+<p>We are working hard to add new features under active development. Please check back later.</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="button" data-dismiss="modal">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#times-circle"></use>
+</svg>
+</div> Close
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script type="text/javascript">
+    $(document).on('click','.navbar-collapse.show',function(e) {
+        if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+            $(this).collapse('hide');
+            $('body').scrollTop(0);
+        }
+    });
+    var $buoop = {required:{e:-1,f:-1,o:-1,s:-1,c:-1},insecure:true,unsupported:true,api:2020.02,text: "Your browser is <b><font color='red'><u>NOT</u></font> supported</b>. <a class='btn btn-success' href='https://browser-update.org/update-browser.html' target='_blank'>Update Your Browser</a>"};
+    function $buo_f(){
+        var e = document.createElement("script");
+        e.src = "https://browser-update.org/update.min.js";
+        document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+</script>
+</body>
+</html>
