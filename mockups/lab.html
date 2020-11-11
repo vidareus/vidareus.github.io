@@ -1,0 +1,1144 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Evaluations</title>
+<meta charset="utf-8">
+<meta name="description" content="Duke T3">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Duke T3">
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-192x192.png">
+<link rel="apple-touch-icon" sizes="167x167" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@latest/images/icons/icon-192x192.png">
+<link rel="manifest" href="https://obge.lollel.com/manifest.json">
+<link href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.03.08.21/images/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vidareus/rsrc@master/css/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.09.11.15/js/script.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css" integrity="sha256-bDcYpq5PLrWdVEWBIoJVgzkhWK2GZPhYBmECca0x85I=" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.min.js" integrity="sha256-XM3WFGub3gsB764gNg+3Qosv9Cq6NE2O/mQ7AxwNt6o=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+<style type="text/css">
+        body {
+            font-size: 1.1em;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .table th, .table td, .table thead th {
+            vertical-align: middle;
+        }
+        .tools {
+            font-size: 1.25rem;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+<div id="loading" class="loading">
+<h1>
+<div class="icon baseline">
+<svg aria-hidden="true" class="icon-spin">
+<use xlink:href="icons.svg#spinner-third"></use>
+</svg>
+</div>
+</h1>
+</div>
+<main class="inner-body">
+<div class="layout layout-nav-side">
+<div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top spf-link">
+<a class="navbar-brand" href="/dashboard">
+<img alt="Duke T3" src="//cdn.jsdelivr.net/gh/vidareus/rsrc@V2020.09.26.16/images/logos/logo.svg" width="50" />&nbsp;<strong>&nbsp;&nbsp;T3<sup><sup><i>beta</i></sup></sup></strong>
+</a>
+<div class="d-flex align-items-center">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<span style="font-size:1.25rem">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#bars"></use>
+</svg>
+</div>
+</span>
+</button>
+<div class="d-block d-lg-none ml-2">
+<div class="dropdown">
+<a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img alt="Image" src="https://coubisou.vidare.us/thumbnail/1234567" class="avatar" />
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="/people/my" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#user"></use>
+</svg>
+</div>
+Profile
+</a>
+<a href="/accounts/logout" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#sign-out-alt"></use>
+</svg>
+</div>
+Logout
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse navbar-collapse flex-column" id="navbar-collapse">
+<ul class="navbar-nav d-lg-block">
+<li class="nav-item">
+<a class="nav-link" href="/dashboard">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#chalkboard"></use>
+</svg>
+</div>
+Dashboard
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/students">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#users-class"></use>
+</svg>
+</div>
+My Students
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/frs/edit">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#telescope"></use>
+</svg>
+</div>
+Research Training Profile
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/resources">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#radar"></use>
+</svg>
+</div>
+Resource Library
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/frs">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#telescope"></use>
+</svg>
+</div>
+Faculty Research Series
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/schedule">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#calendar"></use>
+</svg>
+</div>
+Schedule
+</a>
+</li>
+</ul>
+</div>
+<div class="d-none d-lg-block">
+<div class="dropup">
+<a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img alt="avatar" src="https://coubisou.vidare.us/thumbnail/1234567" class="avatar" /> <span style="color:whitesmoke;font-weight:bold">Faculty</span>
+</a>
+<div class="dropdown-menu">
+<a href="/people/my" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#user"></use>
+</svg>
+</div>
+Profile
+</a>
+<a href="/accounts/logout" class="dropdown-item">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#sign-out-alt"></use>
+</svg>
+</div>
+Logout
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="main-container" class="main-container">
+<div id="content" class="container">
+<form id="form" method="POST" class="checklist">
+<input type="hidden" name="taskID" value="0">
+<div class="row justify-content-center">
+<div id="evaluation" class="col-lg-12 col-xl-12">
+<div class="page-header">
+<h1>Lab Rotations Evaluation Form</h1>
+<p class="lead">for Some Student</p>
+<div id="evaluation-form-notice" class="alert alert-primary" role="alert">
+Comment box will appear once all evaluation questions are answered.
+</div>
+<div class="d-flex align-items-center">
+<ul class="avatars">
+</ul>
+</div>
+</div>
+<ul class="nav nav-tabs nav-fill mb-4" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Knowledge of Relevant Tools and Approaches</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+Experimental Skills
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+Collaboration and Team Science
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
+RCR &amp; Research Ethics and R&amp;R
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">
+Resilience and Survival Skills
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab127" role="tab" aria-controls="tab127" aria-selected="false">
+<div class="baseline icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#lock"></use>
+</svg>
+</div>
+Additional Questions
+</a>
+</li>
+</ul>
+<div class="tab-content mb-4">
+<div class="tab-pane fade active show" id="tab1" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Knowledge of Relevant Tools and Approaches
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="dce84072-e106-4411-91d1-5abc3b7e51e5">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Actively seeks opportunities to learn new experimental systems.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[dce84072-e106-4411-91d1-5abc3b7e51e5]" id="dce84072-e106-4411-91d1-5abc3b7e51e5_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="dce84072-e106-4411-91d1-5abc3b7e51e5_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#dce84072-e106-4411-91d1-5abc3b7e51e5_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[dce84072-e106-4411-91d1-5abc3b7e51e5]" id="dce84072-e106-4411-91d1-5abc3b7e51e5_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="dce84072-e106-4411-91d1-5abc3b7e51e5_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#dce84072-e106-4411-91d1-5abc3b7e51e5_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[dce84072-e106-4411-91d1-5abc3b7e51e5]" id="dce84072-e106-4411-91d1-5abc3b7e51e5_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597" c>
+<label class="custom-control-label" for="dce84072-e106-4411-91d1-5abc3b7e51e5_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#dce84072-e106-4411-91d1-5abc3b7e51e5_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[dce84072-e106-4411-91d1-5abc3b7e51e5]" id="dce84072-e106-4411-91d1-5abc3b7e51e5_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="dce84072-e106-4411-91d1-5abc3b7e51e5_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#dce84072-e106-4411-91d1-5abc3b7e51e5_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[dce84072-e106-4411-91d1-5abc3b7e51e5]" id="dce84072-e106-4411-91d1-5abc3b7e51e5_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="dce84072-e106-4411-91d1-5abc3b7e51e5_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#dce84072-e106-4411-91d1-5abc3b7e51e5_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="39e2dbcc-fac7-4d7c-91da-9914c7262bdb">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Asks critical questions regarding the overall scope of the research and the other ongoing projects in the lab.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[39e2dbcc-fac7-4d7c-91da-9914c7262bdb]" id="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#39e2dbcc-fac7-4d7c-91da-9914c7262bdb_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[39e2dbcc-fac7-4d7c-91da-9914c7262bdb]" id="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#39e2dbcc-fac7-4d7c-91da-9914c7262bdb_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[39e2dbcc-fac7-4d7c-91da-9914c7262bdb]" id="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#39e2dbcc-fac7-4d7c-91da-9914c7262bdb_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[39e2dbcc-fac7-4d7c-91da-9914c7262bdb]" id="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#39e2dbcc-fac7-4d7c-91da-9914c7262bdb_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[39e2dbcc-fac7-4d7c-91da-9914c7262bdb]" id="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="39e2dbcc-fac7-4d7c-91da-9914c7262bdb_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#39e2dbcc-fac7-4d7c-91da-9914c7262bdb_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="740f5871-47e3-480b-824a-0c6c4464f46f">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Keeps a well-documented notebook/written record of experimental design and results.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[740f5871-47e3-480b-824a-0c6c4464f46f]" id="740f5871-47e3-480b-824a-0c6c4464f46f_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="740f5871-47e3-480b-824a-0c6c4464f46f_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#740f5871-47e3-480b-824a-0c6c4464f46f_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[740f5871-47e3-480b-824a-0c6c4464f46f]" id="740f5871-47e3-480b-824a-0c6c4464f46f_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="740f5871-47e3-480b-824a-0c6c4464f46f_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#740f5871-47e3-480b-824a-0c6c4464f46f_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[740f5871-47e3-480b-824a-0c6c4464f46f]" id="740f5871-47e3-480b-824a-0c6c4464f46f_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="740f5871-47e3-480b-824a-0c6c4464f46f_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#740f5871-47e3-480b-824a-0c6c4464f46f_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[740f5871-47e3-480b-824a-0c6c4464f46f]" id="740f5871-47e3-480b-824a-0c6c4464f46f_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="740f5871-47e3-480b-824a-0c6c4464f46f_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#740f5871-47e3-480b-824a-0c6c4464f46f_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[740f5871-47e3-480b-824a-0c6c4464f46f]" id="740f5871-47e3-480b-824a-0c6c4464f46f_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="740f5871-47e3-480b-824a-0c6c4464f46f_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#740f5871-47e3-480b-824a-0c6c4464f46f_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab2" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Experimental Skills
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="cc88b011-0e7b-4da4-92f2-1d0846e30f0c">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Executes experimental procedures properly.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[cc88b011-0e7b-4da4-92f2-1d0846e30f0c]" id="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" >
+<label class="custom-control-label" for="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#cc88b011-0e7b-4da4-92f2-1d0846e30f0c_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[cc88b011-0e7b-4da4-92f2-1d0846e30f0c]" id="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#cc88b011-0e7b-4da4-92f2-1d0846e30f0c_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[cc88b011-0e7b-4da4-92f2-1d0846e30f0c]" id="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#cc88b011-0e7b-4da4-92f2-1d0846e30f0c_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[cc88b011-0e7b-4da4-92f2-1d0846e30f0c]" id="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c" checked>
+<label class="custom-control-label" for="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#cc88b011-0e7b-4da4-92f2-1d0846e30f0c_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[cc88b011-0e7b-4da4-92f2-1d0846e30f0c]" id="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="cc88b011-0e7b-4da4-92f2-1d0846e30f0c_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#cc88b011-0e7b-4da4-92f2-1d0846e30f0c_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="36a9f55b-770a-401d-a2ac-8cb10c9eb180">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Follows safe lab practices and Standard Operating Procedures (SOPs).</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[36a9f55b-770a-401d-a2ac-8cb10c9eb180]" id="36a9f55b-770a-401d-a2ac-8cb10c9eb180_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="36a9f55b-770a-401d-a2ac-8cb10c9eb180_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#36a9f55b-770a-401d-a2ac-8cb10c9eb180_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[36a9f55b-770a-401d-a2ac-8cb10c9eb180]" id="36a9f55b-770a-401d-a2ac-8cb10c9eb180_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="36a9f55b-770a-401d-a2ac-8cb10c9eb180_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#36a9f55b-770a-401d-a2ac-8cb10c9eb180_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[36a9f55b-770a-401d-a2ac-8cb10c9eb180]" id="36a9f55b-770a-401d-a2ac-8cb10c9eb180_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597" checked>
+<label class="custom-control-label" for="36a9f55b-770a-401d-a2ac-8cb10c9eb180_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#36a9f55b-770a-401d-a2ac-8cb10c9eb180_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[36a9f55b-770a-401d-a2ac-8cb10c9eb180]" id="36a9f55b-770a-401d-a2ac-8cb10c9eb180_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="36a9f55b-770a-401d-a2ac-8cb10c9eb180_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#36a9f55b-770a-401d-a2ac-8cb10c9eb180_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+ </div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[36a9f55b-770a-401d-a2ac-8cb10c9eb180]" id="36a9f55b-770a-401d-a2ac-8cb10c9eb180_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="36a9f55b-770a-401d-a2ac-8cb10c9eb180_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#36a9f55b-770a-401d-a2ac-8cb10c9eb180_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab3" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Collaboration and Team Science
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="0ad20cfa-08aa-4f4c-b953-5aa45646b707">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Shares research from own area of expertise in language meaningful to an interdisciplinary team.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ad20cfa-08aa-4f4c-b953-5aa45646b707]" id="0ad20cfa-08aa-4f4c-b953-5aa45646b707_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="0ad20cfa-08aa-4f4c-b953-5aa45646b707_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#0ad20cfa-08aa-4f4c-b953-5aa45646b707_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ad20cfa-08aa-4f4c-b953-5aa45646b707]" id="0ad20cfa-08aa-4f4c-b953-5aa45646b707_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="0ad20cfa-08aa-4f4c-b953-5aa45646b707_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#0ad20cfa-08aa-4f4c-b953-5aa45646b707_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ad20cfa-08aa-4f4c-b953-5aa45646b707]" id="0ad20cfa-08aa-4f4c-b953-5aa45646b707_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="0ad20cfa-08aa-4f4c-b953-5aa45646b707_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#0ad20cfa-08aa-4f4c-b953-5aa45646b707_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ad20cfa-08aa-4f4c-b953-5aa45646b707]" id="0ad20cfa-08aa-4f4c-b953-5aa45646b707_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c" checked>
+<label class="custom-control-label" for="0ad20cfa-08aa-4f4c-b953-5aa45646b707_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#0ad20cfa-08aa-4f4c-b953-5aa45646b707_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[0ad20cfa-08aa-4f4c-b953-5aa45646b707]" id="0ad20cfa-08aa-4f4c-b953-5aa45646b707_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="0ad20cfa-08aa-4f4c-b953-5aa45646b707_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#0ad20cfa-08aa-4f4c-b953-5aa45646b707_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab4" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+ <use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+RCR &amp; Research Ethics and R&amp;R
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="307bef2b-2536-41e8-8e08-6ad4098fbf8a">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Recognizes and follows ethical research practices.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[307bef2b-2536-41e8-8e08-6ad4098fbf8a]" id="307bef2b-2536-41e8-8e08-6ad4098fbf8a_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="307bef2b-2536-41e8-8e08-6ad4098fbf8a_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#307bef2b-2536-41e8-8e08-6ad4098fbf8a_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[307bef2b-2536-41e8-8e08-6ad4098fbf8a]" id="307bef2b-2536-41e8-8e08-6ad4098fbf8a_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="307bef2b-2536-41e8-8e08-6ad4098fbf8a_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#307bef2b-2536-41e8-8e08-6ad4098fbf8a_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[307bef2b-2536-41e8-8e08-6ad4098fbf8a]" id="307bef2b-2536-41e8-8e08-6ad4098fbf8a_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597" checked>
+<label class="custom-control-label" for="307bef2b-2536-41e8-8e08-6ad4098fbf8a_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#307bef2b-2536-41e8-8e08-6ad4098fbf8a_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[307bef2b-2536-41e8-8e08-6ad4098fbf8a]" id="307bef2b-2536-41e8-8e08-6ad4098fbf8a_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="307bef2b-2536-41e8-8e08-6ad4098fbf8a_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#307bef2b-2536-41e8-8e08-6ad4098fbf8a_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[307bef2b-2536-41e8-8e08-6ad4098fbf8a]" id="307bef2b-2536-41e8-8e08-6ad4098fbf8a_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="307bef2b-2536-41e8-8e08-6ad4098fbf8a_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#307bef2b-2536-41e8-8e08-6ad4098fbf8a_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="74e530aa-90bb-478d-bcdb-5f0808b77a50">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Uses appropriate statistical tests to verify data integrity.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[74e530aa-90bb-478d-bcdb-5f0808b77a50]" id="74e530aa-90bb-478d-bcdb-5f0808b77a50_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="74e530aa-90bb-478d-bcdb-5f0808b77a50_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#74e530aa-90bb-478d-bcdb-5f0808b77a50_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[74e530aa-90bb-478d-bcdb-5f0808b77a50]" id="74e530aa-90bb-478d-bcdb-5f0808b77a50_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="74e530aa-90bb-478d-bcdb-5f0808b77a50_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#74e530aa-90bb-478d-bcdb-5f0808b77a50_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[74e530aa-90bb-478d-bcdb-5f0808b77a50]" id="74e530aa-90bb-478d-bcdb-5f0808b77a50_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="74e530aa-90bb-478d-bcdb-5f0808b77a50_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#74e530aa-90bb-478d-bcdb-5f0808b77a50_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[74e530aa-90bb-478d-bcdb-5f0808b77a50]" id="74e530aa-90bb-478d-bcdb-5f0808b77a50_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c" checked>
+<label class="custom-control-label" for="74e530aa-90bb-478d-bcdb-5f0808b77a50_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#74e530aa-90bb-478d-bcdb-5f0808b77a50_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[74e530aa-90bb-478d-bcdb-5f0808b77a50]" id="74e530aa-90bb-478d-bcdb-5f0808b77a50_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="74e530aa-90bb-478d-bcdb-5f0808b77a50_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#74e530aa-90bb-478d-bcdb-5f0808b77a50_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab5" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Resilience and Survival Skills
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead class="thead-light">
+<tr>
+<th width="40%">Learning Objectives</th>
+<th scope="col">Poor</th>
+<th scope="col">Insufficient</th>
+<th scope="col">Competent</th>
+<th scope="col">Very Good</th>
+<th scope="col">Superlative</th>
+</tr>
+</thead>
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="85b0d277-5072-4a08-b532-014f912a00d0">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Self-driven for planning and direction.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[85b0d277-5072-4a08-b532-014f912a00d0]" id="85b0d277-5072-4a08-b532-014f912a00d0_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="85b0d277-5072-4a08-b532-014f912a00d0_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#85b0d277-5072-4a08-b532-014f912a00d0_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[85b0d277-5072-4a08-b532-014f912a00d0]" id="85b0d277-5072-4a08-b532-014f912a00d0_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9" checked>
+<label class="custom-control-label" for="85b0d277-5072-4a08-b532-014f912a00d0_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#85b0d277-5072-4a08-b532-014f912a00d0_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[85b0d277-5072-4a08-b532-014f912a00d0]" id="85b0d277-5072-4a08-b532-014f912a00d0_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="85b0d277-5072-4a08-b532-014f912a00d0_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#85b0d277-5072-4a08-b532-014f912a00d0_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[85b0d277-5072-4a08-b532-014f912a00d0]" id="85b0d277-5072-4a08-b532-014f912a00d0_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="85b0d277-5072-4a08-b532-014f912a00d0_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#85b0d277-5072-4a08-b532-014f912a00d0_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[85b0d277-5072-4a08-b532-014f912a00d0]" id="85b0d277-5072-4a08-b532-014f912a00d0_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="85b0d277-5072-4a08-b532-014f912a00d0_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#85b0d277-5072-4a08-b532-014f912a00d0_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="699b0d95-7499-4a21-b08d-de1f3eb3d655">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Attends required and elective scientific functions of value to the research training.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[699b0d95-7499-4a21-b08d-de1f3eb3d655]" id="699b0d95-7499-4a21-b08d-de1f3eb3d655_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="699b0d95-7499-4a21-b08d-de1f3eb3d655_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#699b0d95-7499-4a21-b08d-de1f3eb3d655_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[699b0d95-7499-4a21-b08d-de1f3eb3d655]" id="699b0d95-7499-4a21-b08d-de1f3eb3d655_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="699b0d95-7499-4a21-b08d-de1f3eb3d655_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#699b0d95-7499-4a21-b08d-de1f3eb3d655_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[699b0d95-7499-4a21-b08d-de1f3eb3d655]" id="699b0d95-7499-4a21-b08d-de1f3eb3d655_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="699b0d95-7499-4a21-b08d-de1f3eb3d655_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#699b0d95-7499-4a21-b08d-de1f3eb3d655_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[699b0d95-7499-4a21-b08d-de1f3eb3d655]" id="699b0d95-7499-4a21-b08d-de1f3eb3d655_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c" checked>
+<label class="custom-control-label" for="699b0d95-7499-4a21-b08d-de1f3eb3d655_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#699b0d95-7499-4a21-b08d-de1f3eb3d655_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[699b0d95-7499-4a21-b08d-de1f3eb3d655]" id="699b0d95-7499-4a21-b08d-de1f3eb3d655_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="699b0d95-7499-4a21-b08d-de1f3eb3d655_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#699b0d95-7499-4a21-b08d-de1f3eb3d655_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="efdcce0e-34b2-45af-b0c7-c9b41461435d">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Displays passion for science, and shares excitement for science with others.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[efdcce0e-34b2-45af-b0c7-c9b41461435d]" id="efdcce0e-34b2-45af-b0c7-c9b41461435d_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="efdcce0e-34b2-45af-b0c7-c9b41461435d_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#efdcce0e-34b2-45af-b0c7-c9b41461435d_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[efdcce0e-34b2-45af-b0c7-c9b41461435d]" id="efdcce0e-34b2-45af-b0c7-c9b41461435d_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="efdcce0e-34b2-45af-b0c7-c9b41461435d_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#efdcce0e-34b2-45af-b0c7-c9b41461435d_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[efdcce0e-34b2-45af-b0c7-c9b41461435d]" id="efdcce0e-34b2-45af-b0c7-c9b41461435d_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597" checked>
+<label class="custom-control-label" for="efdcce0e-34b2-45af-b0c7-c9b41461435d_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#efdcce0e-34b2-45af-b0c7-c9b41461435d_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[efdcce0e-34b2-45af-b0c7-c9b41461435d]" id="efdcce0e-34b2-45af-b0c7-c9b41461435d_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c">
+<label class="custom-control-label" for="efdcce0e-34b2-45af-b0c7-c9b41461435d_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#efdcce0e-34b2-45af-b0c7-c9b41461435d_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[efdcce0e-34b2-45af-b0c7-c9b41461435d]" id="efdcce0e-34b2-45af-b0c7-c9b41461435d_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="efdcce0e-34b2-45af-b0c7-c9b41461435d_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#efdcce0e-34b2-45af-b0c7-c9b41461435d_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="d7a11925-7736-4e50-adb2-f85577f04758">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Demonstrates persistence and resilience.</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d7a11925-7736-4e50-adb2-f85577f04758]" id="d7a11925-7736-4e50-adb2-f85577f04758_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765" value="4c50aa27-1257-c8a6-96fe-7a0ebbe9b765">
+<label class="custom-control-label" for="d7a11925-7736-4e50-adb2-f85577f04758_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765"></label>
+<div class="custom-control-text" onclick="$('#d7a11925-7736-4e50-adb2-f85577f04758_4c50aa27-1257-c8a6-96fe-7a0ebbe9b765').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d7a11925-7736-4e50-adb2-f85577f04758]" id="d7a11925-7736-4e50-adb2-f85577f04758_41f9bf10-a705-1a65-a9e4-e53655ca12e9" value="41f9bf10-a705-1a65-a9e4-e53655ca12e9">
+<label class="custom-control-label" for="d7a11925-7736-4e50-adb2-f85577f04758_41f9bf10-a705-1a65-a9e4-e53655ca12e9"></label>
+<div class="custom-control-text" onclick="$('#d7a11925-7736-4e50-adb2-f85577f04758_41f9bf10-a705-1a65-a9e4-e53655ca12e9').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d7a11925-7736-4e50-adb2-f85577f04758]" id="d7a11925-7736-4e50-adb2-f85577f04758_43d8289a-db74-a957-8d03-e2b71f9a3597" value="43d8289a-db74-a957-8d03-e2b71f9a3597">
+<label class="custom-control-label" for="d7a11925-7736-4e50-adb2-f85577f04758_43d8289a-db74-a957-8d03-e2b71f9a3597"></label>
+<div class="custom-control-text" onclick="$('#d7a11925-7736-4e50-adb2-f85577f04758_43d8289a-db74-a957-8d03-e2b71f9a3597').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d7a11925-7736-4e50-adb2-f85577f04758]" id="d7a11925-7736-4e50-adb2-f85577f04758_4c292ee6-beee-9b14-934f-e3b9fab9746c" value="4c292ee6-beee-9b14-934f-e3b9fab9746c" checked>
+<label class="custom-control-label" for="d7a11925-7736-4e50-adb2-f85577f04758_4c292ee6-beee-9b14-934f-e3b9fab9746c"></label>
+<div class="custom-control-text" onclick="$('#d7a11925-7736-4e50-adb2-f85577f04758_4c292ee6-beee-9b14-934f-e3b9fab9746c').prop('checked', true);">
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[d7a11925-7736-4e50-adb2-f85577f04758]" id="d7a11925-7736-4e50-adb2-f85577f04758_490413be-0205-0640-aa7f-2861903d9600" value="490413be-0205-0640-aa7f-2861903d9600">
+<label class="custom-control-label" for="d7a11925-7736-4e50-adb2-f85577f04758_490413be-0205-0640-aa7f-2861903d9600"></label>
+<div class="custom-control-text" onclick="$('#d7a11925-7736-4e50-adb2-f85577f04758_490413be-0205-0640-aa7f-2861903d9600').prop('checked', true);">
+</div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab127" role="tabpanel">
+<div class="content-list" data-filter-list="checklist">
+<div class="row content-list-head">
+<div class="col-auto">
+<h3>
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#file-alt"></use>
+</svg>
+</div>
+Additional Questions
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#lock"></use>
+</svg>
+</div>
+</h3>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<div class="question content-list-body">
+<input type="hidden" name="question[]" value="2a2129fb-113d-4565-8d6e-3bbadb482808">
+<tr>
+<td class="col-10 col-lg-6 col-xl-6">Based on the information you have now, would you be willing to take this student into your lab (will not be viewed by the student)?</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2a2129fb-113d-4565-8d6e-3bbadb482808]" id="2a2129fb-113d-4565-8d6e-3bbadb482808_a7c2c831-a657-42f3-8c28-d2b6799f847d" value="a7c2c831-a657-42f3-8c28-d2b6799f847d">
+<label class="custom-control-label" for="2a2129fb-113d-4565-8d6e-3bbadb482808_a7c2c831-a657-42f3-8c28-d2b6799f847d"></label>
+<div class="custom-control-text" onclick="$('#2a2129fb-113d-4565-8d6e-3bbadb482808_a7c2c831-a657-42f3-8c28-d2b6799f847d').prop('checked', true);">
+Yes
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2a2129fb-113d-4565-8d6e-3bbadb482808]" id="2a2129fb-113d-4565-8d6e-3bbadb482808_a47219c5-6623-49b7-9bfc-e8997932e42c" value="a47219c5-6623-49b7-9bfc-e8997932e42c">
+<label class="custom-control-label" for="2a2129fb-113d-4565-8d6e-3bbadb482808_a47219c5-6623-49b7-9bfc-e8997932e42c"></label>
+<div class="custom-control-text" onclick="$('#2a2129fb-113d-4565-8d6e-3bbadb482808_a47219c5-6623-49b7-9bfc-e8997932e42c').prop('checked', true);">
+No
+</div>
+</div>
+</td>
+<td class="col-1">
+<div class="custom-control custom-radio">
+<input class="custom-control-input" type="radio" name="response[2a2129fb-113d-4565-8d6e-3bbadb482808]" id="2a2129fb-113d-4565-8d6e-3bbadb482808_0955c325-d388-4522-a93d-c8c0864d54c1" value="0955c325-d388-4522-a93d-c8c0864d54c1" checked>
+<label class="custom-control-label" for="2a2129fb-113d-4565-8d6e-3bbadb482808_0955c325-d388-4522-a93d-c8c0864d54c1"></label>
+<div class="custom-control-text" onclick="$('#2a2129fb-113d-4565-8d6e-3bbadb482808_0955c325-d388-4522-a93d-c8c0864d54c1').prop('checked', true);">
+Maybe
+</div>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="comment-sign-confirm" style="display: none;">
+<div class="card mt-4 mb-4">
+<div class="card-header bg-light">
+<div class="media align-items-center">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#comments"></use>
+</svg>
+</div>
+<div class="media-body ml-2">
+<h5 class="mb-0 fs-0">Comments for Student</h5>
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+<textarea rows="4" name="memo" cols="50" placeholder="Type Comments Here" class="form-control border-0 rounded-0"></textarea>
+</div>
+</div>
+<div class="card mt-4 mb-4">
+<div class="card-header bg-light">
+<div class="media align-items-center">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#comments"></use>
+</svg>
+</div>
+<div class="media-body ml-2">
+<h5 class="mb-0 fs-0">
+<div class="float-left">
+Comments for DGS (will not be viewed by the student)
+</div>
+<div class="float-right">
+<div class="icon">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#lock"></use>
+</svg>
+</div>
+</div>
+<div class="clearfix">
+&nbsp;
+</div>
+</h5>
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+<textarea rows="4" name="memo_secure" cols="50" placeholder="Type Comments Here. This comment is only viewable by DGS" class="form-control border-0 rounded-0"></textarea>
+</div>
+</div>
+<button type="button" class="button button-blue" onclick="saveDraft()">
+<div class="icon baseline">
+<svg aria-hidden="true">
+<use xlink:href="icons.svg#pencil-ruler"></use>
+</svg>
+</div>
+Save Draft
+</button>
+<button type="button" class="button button-primary" onclick="formSubmit()">
+<div class="icon baseline">
+  <svg aria-hidden="true">
+<use xlink:href="icons.svg#save"></use>
+</svg>
+</div> Submit
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.btnNext').click(function() {
+            $('.nav-tabs .active').parent().next('li').find('a').trigger('click');
+        });
+
+        $('.btnPrevious').click(function() {
+            $('.nav-tabs .active').parent().prev('li').find('a').trigger('click');
+        });
+    });
+</script>
+<script type="text/javascript">
+    function formSubmit() {
+        form_status = false;
+
+        $("input:radio").each(function() {
+            if ($('input:radio:checked').length !== $("input:hidden[name=question\\[\\]]").length) {
+                form_status = false;
+            } else {
+                form_status = true;
+            }
+        });
+
+        showToastMessage("This is just a mockup", "now", "This is just a mockup.", "warning");
+    }
+
+    function saveDraft() {
+        showToastMessage("This is just a mockup", "now", "This is just a mockup.", "warning");
+    }
+
+    $(document).ready(function() {
+        if ($('input:radio:checked').length === $("input:hidden[name=question\\[\\]]").length) {
+            $( "#comment-sign-confirm" ).show();
+            $( "#evaluation-form-notice" ).hide();
+        }
+
+        $('input[type=radio]').change(function() {
+            if ($('input:radio:checked').length === $("input:hidden[name=question\\[\\]]").length) {
+                $( "#comment-sign-confirm" ).show();
+                $( "#evaluation-form-notice" ).hide();
+            }
+        });
+
+        autosize($('textarea'));
+    });
+</script>
+</div>
+</div>
+</div>
+</main>
+<script type="text/javascript">
+    $(document).on('click','.navbar-collapse.show',function(e) {
+        if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+            $(this).collapse('hide');
+            $('body').scrollTop(0);
+        }
+    });
+    var $buoop = {required:{e:-1,f:-1,o:-1,s:-1,c:-1},insecure:true,unsupported:true,api:2020.02,text: "Your browser is <b><font color='red'><u>NOT</u></font> supported</b>. <a class='btn btn-success' href='https://browser-update.org/update-browser.html' target='_blank'>Update Your Browser</a>"};
+    function $buo_f(){
+        var e = document.createElement("script");
+        e.src = "https://browser-update.org/update.min.js";
+        document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+</script>
+</body>
+</html>
